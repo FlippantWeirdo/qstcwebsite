@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { Menu, Phone, ArrowRight } from "lucide-react";
+import { Menu, Phone, ArrowRight, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -17,7 +17,28 @@ import { cn } from "@/lib/utils";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
+  {
+    href: "/services",
+    label: "Services",
+    subItems: [
+      {
+        href: "/services/elvsytems",
+        label: "ELV Systems",
+      },
+      {
+        href: "/services/it-infrastructure",
+        label: "IT Infrastructure",
+      },
+      {
+        href: "/services/fire-safety",
+        label: "Fire Detection & Firefighting",
+      },
+      {
+        href: "/services/electric-power-solutions",
+        label: "Electric Power Solutions",
+      },
+    ],
+  },
   { href: "/projects", label: "Projects" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
@@ -27,6 +48,21 @@ export function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  // Determine if the current page has a light background at the top (no dark hero image)
+  const hasDarkHero =
+    pathname === "/" ||
+    pathname === "/about" ||
+    pathname === "/services/fire-safety" ||
+    pathname === "/services/elvsytems" ||
+    pathname === "/services/it-infrastructure" ||
+    pathname === "/services/electric-power-solutions" ||
+    pathname === "/projects" ||
+    pathname === "/contact" ||
+    pathname === "/blog" ||
+    pathname === "/solutions";
+
+  const isLightTop = !scrolled && !hasDarkHero;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,7 +77,7 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-white/80 shadow-sm backdrop-blur-xl dark:bg-gray-950/80"
+          ? "bg-white/80 shadow-sm backdrop-blur-lg dark:bg-gray-950/80"
           : "bg-transparent",
       )}
     >
@@ -49,13 +85,14 @@ export function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className={cn(
-            "flex items-center rounded-lg p-1.5 transition-all",
-            !scrolled && "bg-white/95 shadow-sm",
-          )}
+          className="flex items-center rounded-lg p-1.5 transition-all"
         >
           <Image
-            src="/logo.png"
+            src={
+              scrolled || isLightTop
+                ? "/logov2.png"
+                : "/qstc-logo-white-text.png"
+            }
             alt="QSTC Services Logo"
             width={180}
             height={40}
@@ -67,31 +104,59 @@ export function Navbar() {
         {/* Desktop Navigation */}
         <ul className="hidden items-center gap-1 lg:flex">
           {navLinks.map((link) => {
-            const isActive = pathname === link.href;
+            const isActive =
+              pathname === link.href ||
+              (link.subItems && pathname.startsWith(link.href));
+
             return (
-              <li key={link.href}>
+              <li key={link.href} className="relative group/nav">
                 <Link
-                  href={link.href}
+                  href={link.subItems ? "#" : link.href}
+                  onClick={(e) => link.subItems && e.preventDefault()}
                   className={cn(
-                    "group/link relative px-4 py-2 text-sm font-medium transition-colors duration-300",
+                    "group/link relative flex items-center gap-1 px-4 py-6 text-sm font-medium transition-colors duration-300",
                     isActive
                       ? "text-[#3B82F6]"
-                      : scrolled
+                      : scrolled || isLightTop
                         ? "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
                         : "text-gray-200 hover:text-white",
                   )}
                 >
-                  {link.label}
-                  {/* Animated underline: always present for active, slides in on hover for others */}
-                  <span
-                    className={cn(
-                      "absolute bottom-0 left-1/2 h-0.5 -translate-x-1/2 rounded-full bg-[#3B82F6] transition-all duration-300 ease-out",
-                      isActive
-                        ? "w-5 opacity-100"
-                        : "w-0 opacity-0 group-hover/link:w-5 group-hover/link:opacity-100",
-                    )}
-                  />
+                  <span className="relative">
+                    {link.label}
+                    {/* Animated underline */}
+                    <span
+                      className={cn(
+                        "absolute -bottom-2 left-1/2 h-0.5 -translate-x-1/2 rounded-full bg-[#3B82F6] transition-all duration-300 ease-out",
+                        isActive
+                          ? "w-5 opacity-100"
+                          : "w-0 opacity-0 group-hover/link:w-5 group-hover/link:opacity-100",
+                      )}
+                    />
+                  </span>
+                  {link.subItems && (
+                    <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover/nav:rotate-180" />
+                  )}
                 </Link>
+
+                {/* Desktop Dropdown */}
+                {link.subItems && (
+                  <div className="absolute left-1/2 top-full -translate-x-1/2 pt-2 opacity-0 invisible translate-y-2 group-hover/nav:opacity-100 group-hover/nav:visible group-hover/nav:translate-y-0 transition-all duration-300 ease-out">
+                    <div className="w-[320px] bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 p-4 relative before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white dark:before:border-b-gray-900">
+                      <div className="flex flex-col gap-1">
+                        {link.subItems.map((sub) => (
+                          <Link
+                            key={sub.href}
+                            href={sub.href}
+                            className="block px-4 py-3 rounded-xl text-[14px] text-gray-700 hover:bg-blue-50 hover:text-[#3B82F6] dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-[#3B82F6] transition-colors leading-snug"
+                          >
+                            {sub.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )}
               </li>
             );
           })}
@@ -99,18 +164,6 @@ export function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden items-center gap-3 lg:flex">
-          {/* <a
-            href="tel:+2348000000000"
-            className={cn(
-              "group/phone flex items-center gap-2 text-sm font-medium transition-colors duration-300 hover:text-[#3B82F6]",
-              scrolled
-                ? "text-gray-600 dark:text-gray-300 dark:hover:text-[#3B82F6]"
-                : "text-gray-200"
-            )}
-          >
-            <Phone className="h-4 w-4 transition-transform duration-300 group-hover/phone:rotate-12 group-hover/phone:scale-110" />
-            <span className="hidden xl:inline">Get in Touch</span>
-          </a> */}
           <Button
             asChild
             className={cn(
@@ -134,7 +187,9 @@ export function Navbar() {
               variant="ghost"
               size="icon"
               className={
-                scrolled ? "text-gray-700 dark:text-gray-300" : "text-white"
+                scrolled || isLightTop
+                  ? "text-gray-700 dark:text-gray-300"
+                  : "text-white"
               }
             >
               <Menu className="h-5 w-5" />
@@ -144,7 +199,7 @@ export function Navbar() {
 
           <SheetContent
             side="right"
-            className="w-80 bg-white p-0 dark:bg-gray-950"
+            className="w-[85vw] max-w-sm overflow-y-auto bg-white p-0 dark:bg-gray-950"
           >
             <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
 
@@ -154,26 +209,49 @@ export function Navbar() {
             </div>
 
             {/* Mobile Links */}
-            <div className="flex flex-col px-4 py-4">
+            <div className="flex flex-col px-4 py-4 space-y-1">
               {navLinks.map((link) => {
-                const isActive = pathname === link.href;
+                const isActive =
+                  pathname === link.href ||
+                  (link.subItems && pathname.startsWith(link.href));
+
                 return (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setMobileOpen(false)}
-                    className={cn(
-                      "flex items-center rounded-lg px-4 py-3 text-[15px] font-medium transition-colors",
-                      isActive
-                        ? "bg-blue-50 text-[#3B82F6] dark:bg-blue-500/10"
-                        : "text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-white/5",
+                  <div key={link.href} className="flex flex-col">
+                    <Link
+                      href={link.subItems ? "#" : link.href}
+                      onClick={(e) => {
+                        if (link.subItems) e.preventDefault();
+                        else setMobileOpen(false);
+                      }}
+                      className={cn(
+                        "flex items-center justify-between rounded-lg px-4 py-3 text-[15px] font-medium transition-colors",
+                        isActive && !link.subItems
+                          ? "bg-blue-50 text-[#3B82F6] dark:bg-blue-500/10"
+                          : "text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-white/5",
+                      )}
+                    >
+                      {link.label}
+                      {isActive && !link.subItems && (
+                        <span className="ml-auto h-1.5 w-1.5 rounded-full bg-[#3B82F6]" />
+                      )}
+                    </Link>
+
+                    {/* Mobile SubItems */}
+                    {link.subItems && (
+                      <div className="flex flex-col pl-8 pr-4 py-2 space-y-1">
+                        {link.subItems.map((sub) => (
+                          <Link
+                            key={sub.href}
+                            href={sub.href}
+                            onClick={() => setMobileOpen(false)}
+                            className="block py-2 text-sm text-gray-500 hover:text-[#3B82F6] dark:text-gray-400 dark:hover:text-[#3B82F6] transition-colors"
+                          >
+                            {sub.label}
+                          </Link>
+                        ))}
+                      </div>
                     )}
-                  >
-                    {link.label}
-                    {isActive && (
-                      <span className="ml-auto h-1.5 w-1.5 rounded-full bg-[#3B82F6]" />
-                    )}
-                  </Link>
+                  </div>
                 );
               })}
             </div>

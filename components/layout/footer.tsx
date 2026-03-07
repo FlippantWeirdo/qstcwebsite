@@ -14,7 +14,7 @@ export function Footer() {
               className="inline-flex w-fit items-center rounded-lg bg-white/95 p-2.5 transition-transform hover:scale-105"
             >
               <Image
-                src="/logo.png"
+                src="/logov2.png"
                 alt="QSTC Services Logo"
                 width={180}
                 height={45}
