@@ -1,26 +1,9 @@
 import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { projects } from "@/content/projects";
 
-const projects = [
-  {
-    id: 1,
-    category: "ENTERPRISE",
-    title: "Horizon Business Park",
-    image: "/images/projects/enterprise.png",
-  },
-  {
-    id: 2,
-    category: "INDUSTRIAL",
-    title: "BioTech Research Center",
-    image: "/images/projects/industrial.png",
-  },
-  {
-    id: 3,
-    category: "RESIDENTIAL",
-    title: "The Luminary Residences",
-    image: "/images/projects/residential.png",
-  },
-];
+const featured = projects.slice(0, 3);
 
 export function Projects() {
   return (
@@ -39,21 +22,20 @@ export function Projects() {
             </h2>
           </div>
 
-          <div className="flex items-center gap-4">
-            <button className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-700 text-slate-400 transition-colors hover:border-slate-400 hover:text-white">
-              <ChevronLeft className="h-5 w-5" />
-            </button>
-            <button className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-700 text-slate-400 transition-colors hover:border-slate-400 hover:text-white">
-              <ChevronRight className="h-5 w-5" />
-            </button>
-          </div>
+          <Link
+            href="/projects"
+            className="group flex items-center gap-2 rounded-full border border-slate-700 px-6 py-3 text-sm font-semibold text-slate-300 transition-all duration-300 hover:border-[#3B82F6] hover:text-white hover:bg-[#3B82F6]/10"
+          >
+            See All Projects
+            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </Link>
         </div>
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => (
+          {featured.map((project, index) => (
             <div
-              key={project.id}
+              key={index}
               className="group relative aspect-[4/5] w-full cursor-pointer overflow-hidden rounded-3xl transition-all duration-500 hover:z-10 hover:scale-110 hover:shadow-2xl hover:shadow-[#3B82F6]/20"
             >
               <Image
@@ -68,7 +50,7 @@ export function Projects() {
 
               {/* Text content pinned to the bottom */}
               <div className="absolute bottom-0 left-0 flex w-full flex-col justify-end p-8">
-                <span className="mb-2 text-xs font-bold tracking-widest text-[#3B82F6] transition-transform duration-500 group-hover:-translate-y-1">
+                <span className="mb-2 text-xs font-bold tracking-widest text-[#3B82F6] uppercase transition-transform duration-500 group-hover:-translate-y-1">
                   {project.category}
                 </span>
                 <h3 className="text-2xl font-bold text-white transition-transform duration-500 group-hover:-translate-y-1">

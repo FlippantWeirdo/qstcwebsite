@@ -42,11 +42,11 @@ export function FireOverview() {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="overview-text space-y-6">
-            <div className="bg-blue-50 w-16 h-16 flex items-center justify-center rounded-2xl mb-6">
+            {/* <div className="bg-blue-50 w-16 h-16 flex items-center justify-center rounded-2xl mb-6">
               <Siren className="w-8 h-8 text-blue-600" />
-            </div>
+            </div> */}
 
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 border-b-4 border-blue-600 pb-4 inline-block">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 pb-4 inline-block">
               The Fire Detection Alarm & Firefighting Solutions
             </h2>
 

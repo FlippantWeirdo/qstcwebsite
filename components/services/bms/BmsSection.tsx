@@ -41,11 +41,11 @@ export function BmsSection() {
   return (
     <section
       ref={container}
-      className="py-24 bg-slate-950 text-white overflow-hidden"
+      className="py-24 bg-white text-gray-900 overflow-hidden"
     >
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="bms-image order-2 lg:order-1 relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/20">
+          <div className="bms-image order-2 lg:order-1 relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
               src="/images/services/bms_system.png"
               alt="Building Energy Management System Controller"
@@ -55,16 +55,16 @@ export function BmsSection() {
           </div>
 
           <div className="bms-content order-1 lg:order-2 space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               Building & Energy Management Solutions
             </h2>
 
-            <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
+            <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
               <p>
                 Few of the challenges facing Building owners and Facility
                 Managers in this era are:
               </p>
-              <ul className="list-disc pl-6 space-y-2 text-gray-200">
+              <ul className="list-disc pl-6 space-y-2 text-gray-700">
                 <li>
                   Keeping & maintaining cost of operation as low as possible
                 </li>
@@ -84,7 +84,7 @@ export function BmsSection() {
                 met.
               </p>
 
-              <p className="font-medium text-blue-400">
+              <p className="font-medium text-blue-600">
                 We don&apos;t make the mistake of locking-in our clients to a
                 system where they have no control. We make sure &quot;when they
                 buy the car, they get all the keys too.&quot; Our system put the

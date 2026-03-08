@@ -37,6 +37,10 @@ const navLinks = [
         href: "/services/electric-power-solutions",
         label: "Electric Power Solutions",
       },
+      {
+        href: "/services/bms",
+        label: "Building Management System",
+      },
     ],
   },
   { href: "/projects", label: "Projects" },
@@ -57,6 +61,7 @@ export function Navbar() {
     pathname === "/services/elvsytems" ||
     pathname === "/services/it-infrastructure" ||
     pathname === "/services/electric-power-solutions" ||
+    pathname === "/services/bms" ||
     pathname === "/projects" ||
     pathname === "/contact" ||
     pathname === "/blog" ||

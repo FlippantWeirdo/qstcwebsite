@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import {
   MoveRight,
   Cpu,
@@ -10,131 +11,152 @@ import {
   Flame,
   Thermometer,
 } from "lucide-react";
-import { gsap } from "gsap";
+import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
-// Register ScrollTrigger
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger, useGSAP);
-}
+gsap.registerPlugin(ScrollTrigger);
 
 const services = [
   {
-    icon: <Cpu className="h-6 w-6" />,
+    icon: Cpu,
     title: "ELV Systems",
     description:
       "Complete Extra Low Voltage solutions including structured cabling and data networks.",
+    href: "/services/elvsytems",
   },
   {
-    icon: <Video className="h-6 w-6" />,
+    icon: Video,
     title: "CCTV & Surveillance",
     description:
       "High-definition monitoring and intelligent video analytics for comprehensive security.",
+    href: "/services/elvsytems",
   },
   {
-    icon: <Bot className="h-6 w-6" />,
+    icon: Bot,
     title: "Automation Systems",
     description:
       "Smart building technology designed to optimize efficiency and user comfort.",
+    href: "/services/bms",
   },
   {
-    icon: <Lock className="h-6 w-6" />,
+    icon: Lock,
     title: "Access Control",
     description:
       "Secure entry management solutions using biometric and RFID technologies.",
+    href: "/services/elvsytems",
   },
   {
-    icon: <Flame className="h-6 w-6" />,
+    icon: Flame,
     title: "Fire Safety",
     description:
       "Advanced detection, alarm, and suppression systems to protect life and property.",
+    href: "/services/fire-detection-firefighting",
   },
   {
-    icon: <Thermometer className="h-6 w-6" />,
+    icon: Thermometer,
     title: "Building Management",
     description:
       "Integrated climate control and energy management for sustainable operations.",
+    href: "/services/bms",
   },
 ];
 
 export function Services() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const container = useRef<HTMLElement>(null);
 
   useGSAP(
     () => {
-      // Only animate if cards exist
-      if (cardsRef.current.length === 0) return;
-
-      gsap.fromTo(
-        cardsRef.current,
-        {
-          y: 60,
-          opacity: 0,
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: container.current,
+          start: "top 80%",
         },
+      });
+
+      tl.fromTo(
+        ".services-heading",
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+      );
+
+      tl.fromTo(
+        ".services-subtitle",
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+        "-=0.6",
+      );
+
+      tl.fromTo(
+        ".service-card",
+        { y: 40, opacity: 0 },
         {
           y: 0,
           opacity: 1,
           duration: 0.8,
-          stagger: {
-            amount: 0.5,
-            from: "center",
-            grid: "auto",
-          },
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 45%", // Triggers when top of section hits 75% down viewport
-            toggleActions: "play none none reverse", // Plays forward on enter, reverses on exit back up
-          },
+          stagger: 0.15,
+          ease: "back.out(1.5)",
         },
+        "-=0.4",
       );
     },
-    { scope: sectionRef },
+    { scope: container },
   );
 
   return (
-    <section ref={sectionRef} className="bg-slate-50 py-24 sm:py-32">
-      <div className="container mx-auto px-6 lg:px-12">
-        <div className="mx-auto max-w-2xl text-center mb-16 lg:mb-20">
-          <h2 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+    <section ref={container} className="bg-slate-50 py-24 sm:py-32">
+      <div className="container mx-auto px-6 lg:px-12 max-w-7xl">
+        {/* Section Header */}
+        <div className="text-center mb-16 lg:mb-20">
+          <span className="services-heading inline-block text-sm font-semibold tracking-widest uppercase text-[#3B82F6] mb-3">
+            What We Do
+          </span>
+          <h2 className="services-heading text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
             Our Services
           </h2>
-          <p className="mt-4 text-lg text-slate-600">
+          <p className="services-subtitle mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
             Integrated technology solutions tailored for commercial, industrial,
             and residential infrastructures.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              ref={(el) => {
-                if (el) cardsRef.current[index] = el;
-              }}
-              // Tailwind group class is used here to target child elements easily on parent hover
-              className="group relative flex flex-col items-start justify-between rounded-3xl bg-slate-100 p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:bg-emerald-50 hover:shadow-lg hover:shadow-emerald-500/10 cursor-pointer border border-transparent hover:border-emerald-100"
-            >
-              <div>
-                <div className="mb-6 inline-flex items-center justify-center rounded-2xl bg-slate-200 p-3 text-slate-700 transition-colors duration-500 group-hover:bg-emerald-100 group-hover:text-emerald-700">
-                  {service.icon}
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((service, index) => {
+            const Icon = service.icon;
+            return (
+              <Link
+                key={index}
+                href={service.href}
+                className="service-card group relative bg-white rounded-2xl p-8 lg:p-10 border border-slate-200 shadow-sm hover:border-blue-200 hover:bg-linear-to-br hover:from-blue-50/50 hover:to-white hover:shadow-xl hover:shadow-blue-100/40 hover:-translate-y-1.5 transition-all duration-400 no-underline"
+              >
+                {/* Decorative corner accent */}
+                <div className="absolute top-0 right-0 w-20 h-20 bg-linear-to-bl from-blue-50 to-transparent rounded-tr-2xl rounded-bl-[3rem] opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
+
+                {/* Icon */}
+                <div className="relative bg-linear-to-br from-[#3B82F6] to-[#1D4ED8] w-14 h-14 rounded-xl flex items-center justify-center mb-6 shadow-md shadow-blue-200/50 group-hover:scale-110 transition-transform duration-300">
+                  <Icon className="w-7 h-7 text-white" strokeWidth={1.8} />
                 </div>
-                <h3 className="mb-3 text-xl font-bold text-slate-900 transition-colors duration-500 group-hover:text-emerald-950">
+
+                {/* Content */}
+                <h3 className="relative text-xl font-bold text-[#0F172A] mb-3 group-hover:text-[#1E40AF] transition-colors duration-300">
                   {service.title}
                 </h3>
-                <p className="mb-8 text-sm leading-relaxed text-slate-600 transition-colors duration-500 group-hover:text-emerald-800/80">
+                <p className="relative text-slate-600 leading-relaxed text-[15px] mb-8">
                   {service.description}
                 </p>
-              </div>
 
-              <div className="mt-auto flex items-center font-bold text-[#3B82F6] transition-colors duration-500 group-hover:text-emerald-600">
-                <span className="text-sm">Learn More</span>
-                <MoveRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </div>
-            </div>
-          ))}
+                {/* Learn More */}
+                <div className="relative mt-auto flex items-center font-bold text-[#3B82F6]">
+                  <span className="text-sm">Learn More</span>
+                  <MoveRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                </div>
+
+                {/* Bottom accent line */}
+                <div className="absolute bottom-0 left-8 right-8 h-0.5 bg-linear-to-r from-transparent via-[#3B82F6] to-transparent opacity-0 group-hover:opacity-40 transition-opacity duration-400 rounded-full" />
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

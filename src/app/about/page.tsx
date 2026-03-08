@@ -2,6 +2,7 @@ import { AboutHero } from "@/components/about/AboutHero";
 import { OurJourney } from "@/components/about/OurJourney";
 import { OurBusinessPhilosophy } from "@/components/about/OurBusinessPhilosophy";
 import { MissionVision } from "@/components/about/MissionVision";
+import { WhyTrustUs } from "@/components/about/WhyTrustUs";
 import { QuoteStats } from "@/components/about/QuoteStats";
 import { PartnersMarquee } from "@/components/about/PartnersMarquee";
 import { AboutCta } from "@/components/about/AboutCta";
@@ -13,6 +14,7 @@ export default function AboutPage() {
       <OurJourney />
       <OurBusinessPhilosophy />
       <MissionVision />
+      <WhyTrustUs />
       <QuoteStats />
       <PartnersMarquee />
       <AboutCta />

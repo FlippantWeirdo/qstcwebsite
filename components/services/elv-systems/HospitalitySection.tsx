@@ -61,7 +61,6 @@ export function HospitalitySection() {
 
               <div className="pt-4 border-t border-gray-800">
                 <p className="font-semibold text-gray-100 mb-4 flex items-center gap-2">
-                  <span className="w-8 h-px bg-blue-500 inline-block"></span>
                   Aside from the locks, we also offer the hospitality industry:
                 </p>
 
