@@ -10,6 +10,7 @@ import {
   Lock,
   Flame,
   Thermometer,
+  Wrench,
 } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -23,14 +24,14 @@ const services = [
     title: "ELV Systems",
     description:
       "Complete Extra Low Voltage solutions including structured cabling and data networks.",
-    href: "/services/elvsytems",
+    href: "/services/elvsystems",
   },
   {
     icon: Video,
     title: "CCTV & Surveillance",
     description:
       "High-definition monitoring and intelligent video analytics for comprehensive security.",
-    href: "/services/elvsytems",
+    href: "/services/elvsystems",
   },
   {
     icon: Bot,
@@ -44,7 +45,7 @@ const services = [
     title: "Access Control",
     description:
       "Secure entry management solutions using biometric and RFID technologies.",
-    href: "/services/elvsytems",
+    href: "/services/elvsystems",
   },
   {
     icon: Flame,
@@ -59,6 +60,12 @@ const services = [
     description:
       "Integrated climate control and energy management for sustainable operations.",
     href: "/services/bms",
+  },
+  {
+    icon: Wrench,
+    title: "Mechanical & Plumbing",
+    description: "Comprehensive HVAC, water supply, and drainage solutions.",
+    href: "/services/mechanical-plumbing",
   },
 ];
 

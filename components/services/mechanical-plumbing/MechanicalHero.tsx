@@ -5,7 +5,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-export function ProjectsHero() {
+export function MechanicalHero() {
   const container = useRef<HTMLDivElement>(null);
 
   useGSAP(
@@ -25,12 +25,13 @@ export function ProjectsHero() {
   return (
     <section
       ref={container}
-      className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden"
+      className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-slate-950"
     >
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/projects/enterprise.png"
-          alt="QSTC Projects Portfolio"
+          src="/images/services/mechanical_hero.png"
+          alt="Mechanical and Plumbing Systems"
           fill
           className="object-cover brightness-[0.3]"
           priority
@@ -40,14 +41,14 @@ export function ProjectsHero() {
       <div className="container relative z-10 mx-auto px-6 text-center text-white">
         <div className="hero-content max-w-4xl mx-auto space-y-6">
           <div className="inline-block bg-blue-600 px-4 py-1.5 rounded-full text-sm font-bold tracking-widest uppercase mb-4">
-            Our Portfolio
+            HVAC, Water &amp; Drainage
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-            Recent Projects
+            Mechanical &amp; Plumbing Systems
           </h1>
           <p className="text-lg md:text-xl text-gray-200">
-            A selection of projects that showcase our capabilities across fire
-            safety, ELV systems, IT infrastructure, and power solutions.
+            Comprehensive HVAC, water supply, and drainage solutions for modern
+            commercial and industrial infrastructures.
           </p>
         </div>
       </div>

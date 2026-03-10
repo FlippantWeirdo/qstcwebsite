@@ -85,7 +85,7 @@ export function OurJourney() {
             <div className="flex flex-col sm:flex-row gap-12 pt-6">
               <div className="border-l-[3px] border-[#3B82F6] pl-6 py-1">
                 <div className="text-4xl font-extrabold text-[#3B82F6] mb-2">
-                  15+
+                  20+
                 </div>
                 <div className="text-xs font-bold text-[#6B7280] tracking-widest uppercase">
                   Years of Experience

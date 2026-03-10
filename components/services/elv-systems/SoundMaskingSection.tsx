@@ -73,9 +73,9 @@ export function SoundMaskingSection() {
                   </li>
                 ))}
               </ul>
-              <p className="sm-text text-xl font-semibold text-blue-900 mt-6 text-center">
+              {/* <p className="sm-text text-xl font-semibold text-blue-900 mt-6 text-center">
                 ...is the sound masking system.
-              </p>
+              </p> */}
             </div>
 
             <p className="sm-text text-lg text-gray-600 leading-relaxed">

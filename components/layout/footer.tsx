@@ -43,16 +43,19 @@ export function Footer() {
                 Home
               </Link>
               <Link
-                href="/solutions"
+                href="/about"
                 className="transition-colors hover:text-white"
               >
-                Solutions
+                About Us
               </Link>
               <Link
                 href="/projects"
                 className="transition-colors hover:text-white"
               >
                 Projects
+              </Link>
+              <Link href="/blog" className="transition-colors hover:text-white">
+                Blog
               </Link>
               <Link
                 href="/contact"
@@ -63,21 +66,45 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Column 3: Core Services */}
+          {/* Column 3: Services */}
           <div className="flex flex-col space-y-4">
-            <h4 className="font-bold text-[#3B82F6]">Core Services</h4>
+            <h4 className="font-bold text-[#3B82F6]">Services</h4>
             <nav className="flex flex-col space-y-3 text-sm text-slate-400">
-              <Link href="#" className="transition-colors hover:text-white">
-                ELV Engineering
+              <Link
+                href="/services/elvsystems"
+                className="transition-colors hover:text-white"
+              >
+                ELV Systems
               </Link>
-              <Link href="#" className="transition-colors hover:text-white">
-                Security Design
+              <Link
+                href="/services/fire-safety"
+                className="transition-colors hover:text-white"
+              >
+                Fire Detection &amp; Firefighting
               </Link>
-              <Link href="#" className="transition-colors hover:text-white">
-                Smart Automation
+              <Link
+                href="/services/it-infrastructure"
+                className="transition-colors hover:text-white"
+              >
+                IT Infrastructure
               </Link>
-              <Link href="#" className="transition-colors hover:text-white">
-                BMS Optimization
+              <Link
+                href="/services/bms"
+                className="transition-colors hover:text-white"
+              >
+                Building Management System
+              </Link>
+              <Link
+                href="/services/electric-power-solutions"
+                className="transition-colors hover:text-white"
+              >
+                Electric Power Solutions
+              </Link>
+              <Link
+                href="/services/mechanical-plumbing"
+                className="transition-colors hover:text-white"
+              >
+                Mechanical &amp; Plumbing
               </Link>
             </nav>
           </div>
@@ -86,16 +113,20 @@ export function Footer() {
           <div className="flex flex-col space-y-4 lg:pl-8">
             <h4 className="font-bold text-[#3B82F6]">Resources</h4>
             <div className="flex flex-col space-y-6 mt-2">
-              <button className="flex w-full items-center justify-center gap-2 rounded-lg border border-slate-800 bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition-all hover:bg-slate-800 hover:border-slate-700">
+              <a
+                href="/documents/QSTC-Corporate-Profile_.pdf"
+                download
+                className="flex w-full items-center justify-center gap-2 rounded-lg border border-slate-800 bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition-all hover:bg-slate-800 hover:border-slate-700"
+              >
                 <Download className="h-4 w-4" />
                 Company Profile PDF
-              </button>
+              </a>
               <a
-                href="mailto:contact@qstc.services"
+                href="mailto:info@qstcng.com"
                 className="flex items-center gap-3 text-sm text-slate-400 transition-colors hover:text-white"
               >
                 <Mail className="h-5 w-5 text-[#3B82F6]" />
-                contact@qstc.services
+                info@qstcng.com
               </a>
             </div>
           </div>

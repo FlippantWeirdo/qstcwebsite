@@ -12,19 +12,19 @@ export const projects: Project[] = [
   // ── Fire Safety ──────────────────────────────────────────────
   {
     title:
-      "Commissioning of BMS, Addressable Fire Detection, Novec Automatic Fire Fighting, VESDA Systems for MainOne/Equinix, Lekki, Lagos - LG2",
+      "Commissioning of BMS, Addressable Fire Detection, Novec Automatic Fire Fighting, VESDA Systems for Data Center",
     category: "Fire Safety",
     image: "/images/projects/enterprise.png",
   },
   {
     title:
-      "Reactivation & Upgrade of FOAM Automatic Fire Fighting Solution for MainOne/Equinix Data Center - LG1",
+      "Reactivation & Upgrade of FOAM Automatic Fire Fighting Solution for Data Center",
     category: "Fire Safety",
     image: "/images/projects/industrial.png",
   },
   {
     title:
-      "Upgrade of Addressable Fire Detection & Alarm Solution for MainOne/Equinix Data Center - LG2",
+      "Upgrade of Addressable Fire Detection & Alarm Solution for Data Center",
     category: "Fire Safety",
     image: "/images/projects/residential.png",
   },
@@ -36,7 +36,7 @@ export const projects: Project[] = [
   },
   {
     title:
-      "Commissioning of Addressable Fire Detection, Novec Automatic Fire Fighting, VESDA Systems for Medallion/Digital Realty, Victoria Island, Lagos - LOS2",
+      "Commissioning of Addressable Fire Detection, Novec Automatic Fire Fighting, VESDA Systems for Data Center",
     category: "Fire Safety",
     image: "/images/projects/residential.png",
   },

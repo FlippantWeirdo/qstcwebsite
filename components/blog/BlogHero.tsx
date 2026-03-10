@@ -5,7 +5,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-export function ProjectsHero() {
+export function BlogHero() {
   const container = useRef<HTMLDivElement>(null);
 
   useGSAP(
@@ -30,7 +30,7 @@ export function ProjectsHero() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/projects/enterprise.png"
-          alt="QSTC Projects Portfolio"
+          alt="QSTC Blog"
           fill
           className="object-cover brightness-[0.3]"
           priority
@@ -40,14 +40,14 @@ export function ProjectsHero() {
       <div className="container relative z-10 mx-auto px-6 text-center text-white">
         <div className="hero-content max-w-4xl mx-auto space-y-6">
           <div className="inline-block bg-blue-600 px-4 py-1.5 rounded-full text-sm font-bold tracking-widest uppercase mb-4">
-            Our Portfolio
+            Our Blog
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-            Recent Projects
+            Insights & Updates
           </h1>
           <p className="text-lg md:text-xl text-gray-200">
-            A selection of projects that showcase our capabilities across fire
-            safety, ELV systems, IT infrastructure, and power solutions.
+            Industry insights, project highlights, and expert perspectives on
+            systems integration, fire safety, and smart building technology.
           </p>
         </div>
       </div>

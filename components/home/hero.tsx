@@ -3,6 +3,7 @@
 import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Download } from "lucide-react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Button } from "@/components/ui/button";
@@ -139,7 +140,7 @@ export function Hero() {
                 size="lg"
                 className="group relative overflow-hidden rounded-lg bg-[#3B82F6] px-8 py-6 text-base font-semibold text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2563EB] hover:shadow-xl hover:shadow-blue-500/30"
               >
-                <Link href="/services">Explore Solutions</Link>
+                <Link href="/services/elvsystems">Explore ELV Services</Link>
               </Button>
             </div>
             <div className="hero-btn">
@@ -149,7 +150,10 @@ export function Hero() {
                 size="lg"
                 className="rounded-lg border-white/20 bg-white/5 px-8 py-6 text-base font-semibold text-white shadow-none backdrop-blur-md transition-colors hover:bg-white/10 hover:text-white"
               >
-                <Link href="/contact">Contact Us</Link>
+                <a href="/documents/QSTC-Corporate-Profile_.pdf" download>
+                  <Download className="h-5 w-5 mr-2" />
+                  Download Profile
+                </a>
               </Button>
             </div>
           </div>

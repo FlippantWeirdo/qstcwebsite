@@ -101,9 +101,9 @@ export function FireOverview() {
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent"></div>
-            <div className="absolute bottom-6 right-8 bg-blue-600 text-white py-2 px-6 rounded-lg font-bold text-2xl shadow-lg">
+            {/* <div className="absolute bottom-6 right-8 bg-blue-600 text-white py-2 px-6 rounded-lg font-bold text-2xl shadow-lg">
               04
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

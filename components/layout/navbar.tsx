@@ -22,7 +22,7 @@ const navLinks = [
     label: "Services",
     subItems: [
       {
-        href: "/services/elvsytems",
+        href: "/services/elvsystems",
         label: "ELV Systems",
       },
       {
@@ -41,6 +41,10 @@ const navLinks = [
         href: "/services/bms",
         label: "Building Management System",
       },
+      {
+        href: "/services/mechanical-plumbing",
+        label: "Mechanical & Plumbing",
+      },
     ],
   },
   { href: "/projects", label: "Projects" },
@@ -58,10 +62,11 @@ export function Navbar() {
     pathname === "/" ||
     pathname === "/about" ||
     pathname === "/services/fire-safety" ||
-    pathname === "/services/elvsytems" ||
+    pathname === "/services/elvsystems" ||
     pathname === "/services/it-infrastructure" ||
     pathname === "/services/electric-power-solutions" ||
     pathname === "/services/bms" ||
+    pathname === "/services/mechanical-plumbing" ||
     pathname === "/projects" ||
     pathname === "/contact" ||
     pathname === "/blog" ||

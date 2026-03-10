@@ -154,7 +154,6 @@ export function ContactForm() {
                   Email Address
                 </h4>
                 <p className="text-gray-600">info@qstcng.com</p>
-                <p className="text-gray-600">qstcng@gmail.com</p>
                 <div className="w-full border-b border-dashed border-blue-200/60 mt-6 box-border"></div>
               </div>
             </div>

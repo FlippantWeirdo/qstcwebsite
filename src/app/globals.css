@@ -124,3 +124,73 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* ── Prose styles for MDX blog content ───────────────────────── */
+.prose {
+  @apply text-gray-700 leading-relaxed text-lg;
+}
+
+.prose h1 {
+  @apply mt-12 mb-6 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl;
+}
+
+.prose > h1:first-child {
+  @apply hidden;
+}
+
+.prose h2 {
+  @apply mt-10 mb-4 text-2xl font-bold text-gray-900 md:text-3xl;
+  @apply border-b border-gray-200 pb-3;
+}
+
+.prose h3 {
+  @apply mt-8 mb-3 text-xl font-bold text-gray-800;
+}
+
+.prose p {
+  @apply mb-6;
+}
+
+.prose a {
+  @apply font-medium text-[#2563EB] underline decoration-[#2563EB]/30 underline-offset-2 transition-colors hover:text-[#1E40AF] hover:decoration-[#1E40AF]/60;
+}
+
+.prose strong {
+  @apply font-bold text-gray-900;
+}
+
+.prose ul {
+  @apply mb-6 ml-6 list-disc space-y-2;
+}
+
+.prose ol {
+  @apply mb-6 ml-6 list-decimal space-y-2;
+}
+
+.prose li {
+  @apply pl-1;
+}
+
+.prose blockquote {
+  @apply my-6 rounded-r-lg border-l-4 border-[#3B82F6] bg-blue-50 py-4 pl-6 pr-4 italic text-gray-600;
+}
+
+.prose code {
+  @apply rounded bg-gray-100 px-1.5 py-0.5 text-sm font-medium text-gray-800;
+}
+
+.prose pre {
+  @apply my-6 overflow-x-auto rounded-xl bg-gray-900 p-6 text-sm leading-relaxed text-gray-100;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-inherit;
+}
+
+.prose hr {
+  @apply my-10 border-gray-200;
+}
+
+.prose img {
+  @apply my-8 rounded-xl shadow-lg;
+}
