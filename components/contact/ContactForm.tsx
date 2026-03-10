@@ -1,9 +1,18 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState, FormEvent } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { Phone, Mail, MapPin, Clock, PenTool } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  PenTool,
+  CheckCircle,
+  AlertCircle,
+  Loader2,
+} from "lucide-react";
 import {
   Select,
   SelectContent,
@@ -12,8 +21,12 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+type FormStatus = "idle" | "submitting" | "success" | "error";
+
 export function ContactForm() {
   const container = useRef<HTMLDivElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+  const [status, setStatus] = useState<FormStatus>("idle");
 
   useGSAP(
     () => {
@@ -40,6 +53,32 @@ export function ContactForm() {
     { scope: container },
   );
 
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("submitting");
+
+    const formData = new FormData(e.currentTarget);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mwvrpolp", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        formRef.current?.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
+
   return (
     <section ref={container} className="py-24 bg-white">
       <div className="container mx-auto px-6 lg:px-12">
@@ -51,80 +90,127 @@ export function ContactForm() {
               Get In Touch
             </div>
 
-            <form
-              action="https://formspree.io/f/mwvrpolp"
-              method="POST"
-              className="space-y-6"
-            >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <input
-                  type="text"
-                  name="subject"
-                  placeholder="Subject"
-                  required
-                  className="form-element w-full h-[54px] px-4 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600/50 focus:border-blue-600 transition-colors"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email address"
-                  required
-                  className="form-element w-full h-[54px] px-4 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600/50 focus:border-blue-600 transition-colors"
-                />
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Full name"
-                  required
-                  className="form-element w-full h-[54px] px-4 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600/50 focus:border-blue-600 transition-colors"
-                />
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone number"
-                  className="form-element w-full h-[54px] px-4 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600/50 focus:border-blue-600 transition-colors"
-                />
-                <input
-                  type="text"
-                  name="company"
-                  placeholder="Company's name"
-                  className="form-element w-full h-[54px] px-4 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600/50 focus:border-blue-600 transition-colors"
-                />
-                <Select name="interest" required>
-                  <SelectTrigger className="form-element w-full !h-[54px] px-4 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600/50 focus:border-blue-600 transition-colors text-gray-500 text-base shadow-none">
-                    <SelectValue placeholder="What's your Interest" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="elv-systems">ELV Systems</SelectItem>
-                    <SelectItem value="it-infrastructure">
-                      IT Infrastructure
-                    </SelectItem>
-                    <SelectItem value="fire-safety">
-                      Fire Detection & Firefighting
-                    </SelectItem>
-                    <SelectItem value="electric-power">
-                      Electric Power Solutions
-                    </SelectItem>
-                    <SelectItem value="general">General Inquiry</SelectItem>
-                  </SelectContent>
-                </Select>
+            {/* Success Message */}
+            {status === "success" && (
+              <div className="flex items-start gap-3 p-4 bg-green-50 border border-green-200 rounded-lg">
+                <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 shrink-0" />
+                <div>
+                  <p className="font-semibold text-green-800">
+                    Message sent successfully!
+                  </p>
+                  <p className="text-green-700 text-sm mt-1">
+                    Thank you for reaching out. We&apos;ll get back to you
+                    shortly.
+                  </p>
+                  <button
+                    onClick={() => setStatus("idle")}
+                    className="mt-3 text-sm font-medium text-green-700 underline underline-offset-2 hover:text-green-900 transition-colors"
+                  >
+                    Send another message
+                  </button>
+                </div>
               </div>
+            )}
 
-              <textarea
-                name="message"
-                placeholder="Type your message here..."
-                rows={6}
-                required
-                className="form-element w-full px-4 py-3 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600/50 focus:border-blue-600 transition-colors resize-none"
-              ></textarea>
+            {/* Error Message */}
+            {status === "error" && (
+              <div className="flex items-start gap-3 p-4 bg-red-50 border border-red-200 rounded-lg">
+                <AlertCircle className="w-5 h-5 text-red-600 mt-0.5 shrink-0" />
+                <div>
+                  <p className="font-semibold text-red-800">
+                    Something went wrong
+                  </p>
+                  <p className="text-red-700 text-sm mt-1">
+                    Your message could not be sent. Please try again or email us
+                    directly at info@qstcng.com.
+                  </p>
+                </div>
+              </div>
+            )}
 
-              <button
-                type="submit"
-                className="form-element mt-4 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition-colors shadow-sm"
-              >
-                Send Message
-              </button>
-            </form>
+            {status !== "success" && (
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                    className="form-element w-full h-[54px] px-4 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600/50 focus:border-blue-600 transition-colors"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email address"
+                    required
+                    className="form-element w-full h-[54px] px-4 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600/50 focus:border-blue-600 transition-colors"
+                  />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Full name"
+                    required
+                    className="form-element w-full h-[54px] px-4 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600/50 focus:border-blue-600 transition-colors"
+                  />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone number"
+                    className="form-element w-full h-[54px] px-4 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600/50 focus:border-blue-600 transition-colors"
+                  />
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="Company's name"
+                    className="form-element w-full h-[54px] px-4 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600/50 focus:border-blue-600 transition-colors"
+                  />
+                  <Select name="interest" required>
+                    <SelectTrigger className="form-element w-full h-[54px]! px-4 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600/50 focus:border-blue-600 transition-colors text-gray-500 text-base shadow-none">
+                      <SelectValue placeholder="What's your Interest" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="elv-systems">ELV Systems</SelectItem>
+                      <SelectItem value="it-infrastructure">
+                        IT Infrastructure
+                      </SelectItem>
+                      <SelectItem value="fire-safety">
+                        Fire Detection & Firefighting
+                      </SelectItem>
+                      <SelectItem value="electric-power">
+                        Electric Power Solutions
+                      </SelectItem>
+                      <SelectItem value="mechanical-plumbing">
+                        Mechanical & Plumbing
+                      </SelectItem>
+                      <SelectItem value="general">General Inquiry</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <textarea
+                  name="message"
+                  placeholder="Type your message here..."
+                  rows={6}
+                  required
+                  className="form-element w-full px-4 py-3 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600/50 focus:border-blue-600 transition-colors resize-none"
+                ></textarea>
+
+                <button
+                  type="submit"
+                  disabled={status === "submitting"}
+                  className="form-element mt-4 px-8 py-3 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-medium rounded-md transition-colors shadow-sm inline-flex items-center gap-2"
+                >
+                  {status === "submitting" ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    "Send Message"
+                  )}
+                </button>
+              </form>
+            )}
           </div>
 
           {/* Right Side: Contact Info */}
