@@ -13,7 +13,7 @@ export function About() {
               {/* Fallback gray bg while image loads */}
               <div className="absolute inset-0 bg-gray-100" />
               <Image
-                src="/images/IMG_9008.jpg"
+                src="/images/IMG_9008.webp"
                 alt="Modern corporate office interior"
                 fill
                 className="object-cover object-center"
@@ -92,3 +92,4 @@ export function About() {
     </section>
   );
 }
+

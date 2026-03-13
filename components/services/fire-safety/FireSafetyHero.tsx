@@ -30,7 +30,7 @@ export function FireSafetyHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/1000125275.jpg"
+          src="/images/1000125275.webp"
           alt="Fire Safety Operations"
           fill
           className="object-cover brightness-[0.4]"
@@ -55,3 +55,4 @@ export function FireSafetyHero() {
     </section>
   );
 }
+

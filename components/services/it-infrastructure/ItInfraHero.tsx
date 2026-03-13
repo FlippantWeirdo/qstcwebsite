@@ -29,7 +29,7 @@ export function ItInfraHero() {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/IMG_1659.jpg"
+          src="/images/IMG_1659.webp"
           alt="IT Infrastructure and Network Cabling"
           fill
           className="object-cover brightness-[0.3]"
@@ -54,3 +54,4 @@ export function ItInfraHero() {
     </section>
   );
 }
+

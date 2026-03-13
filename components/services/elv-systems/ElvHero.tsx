@@ -30,11 +30,12 @@ export function ElvHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/20250828_130608.jpg"
+          src="/images/20250828_130608.webp"
           alt="ELV Security Systems"
           fill
           className="object-cover brightness-[0.4]"
           priority
+          sizes="100vw"
         />
       </div>
 
@@ -55,3 +56,4 @@ export function ElvHero() {
     </section>
   );
 }
+

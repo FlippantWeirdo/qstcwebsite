@@ -98,7 +98,7 @@ export function ElvOverview() {
 
           <div className="overview-image relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/IMG_9437.jpg"
+              src="/images/IMG_9437.webp"
               alt="CCTV and Server Infrastructure"
               fill
               className="object-cover"
@@ -109,3 +109,4 @@ export function ElvOverview() {
     </section>
   );
 }
+

@@ -30,7 +30,7 @@ export function MechanicalHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/IMG_8981.jpg"
+          src="/images/IMG_8981.webp"
           alt="Mechanical and Plumbing Systems"
           fill
           className="object-cover brightness-[0.3]"
@@ -55,3 +55,4 @@ export function MechanicalHero() {
     </section>
   );
 }
+

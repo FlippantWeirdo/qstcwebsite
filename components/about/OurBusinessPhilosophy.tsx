@@ -152,7 +152,7 @@ export function OurBusinessPhilosophy() {
           <div className="relative mt-8 lg:mt-0 pt-12 lg:pt-0">
             <div className="philosophy-image relative h-[650px] w-full rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/20250220_093416.jpg"
+                src="/images/20250220_093416.webp"
                 alt="Engineers discussing project in a modern office"
                 fill
                 className="object-cover"
@@ -164,3 +164,4 @@ export function OurBusinessPhilosophy() {
     </section>
   );
 }
+

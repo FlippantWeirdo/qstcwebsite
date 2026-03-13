@@ -30,7 +30,7 @@ export function BmsHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/services/bms_system.png"
+          src="/images/services/bms_system.webp"
           alt="Building Management Systems"
           fill
           className="object-cover brightness-[0.3]"
@@ -55,3 +55,4 @@ export function BmsHero() {
     </section>
   );
 }
+

@@ -96,7 +96,7 @@ export function ItOverview() {
 
           <div className="overview-image relative h-[700px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/20250828_120213.jpg"
+              src="/images/20250828_120213.webp"
               alt="Network Infrastructures and Server Hardware"
               fill
               className="object-cover"
@@ -107,3 +107,4 @@ export function ItOverview() {
     </section>
   );
 }
+

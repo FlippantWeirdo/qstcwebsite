@@ -47,7 +47,7 @@ export function BmsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="bms-image order-2 lg:order-1 relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/bmsillustration.png"
+              src="/images/bmsillustration.webp"
               alt="Building Energy Management System Controller"
               fill
               className="object-cover"
@@ -98,3 +98,4 @@ export function BmsSection() {
     </section>
   );
 }
+

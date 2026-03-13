@@ -9,11 +9,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const partners = [
-  { src: "/images/about/Mamuda-Group-Logo.png", alt: "Mamuda Group" },
-  { src: "/images/about/limage-3328-406-photo.png", alt: "Partner Logo" },
-  { src: "/images/about/mainone-logo.png", alt: "MainOne" },
+  { src: "/images/about/Mamuda-Group-Logo.webp", alt: "Mamuda Group" },
+  { src: "/images/about/limage-3328-406-photo.webp", alt: "Partner Logo" },
+  { src: "/images/about/mainone-logo.webp", alt: "MainOne" },
   { src: "/images/about/mantrac-logo.webp", alt: "Mantrac" },
-  { src: "/images/about/medallion-logo.png", alt: "Medallion" },
+  { src: "/images/about/medallion-logo.webp", alt: "Medallion" },
   { src: "/images/about/nestav-logo.png", alt: "Nestav" },
   { src: "/images/about/ng-jberge-logo.webp", alt: "Julius Berger" },
 ];

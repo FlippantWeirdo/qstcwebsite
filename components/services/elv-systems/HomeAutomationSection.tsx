@@ -74,7 +74,7 @@ export function HomeAutomationSection() {
 
           <div className="ha-image relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/home_automation.png"
+              src="/images/home_automation.webp"
               alt="Smart Home Automation via Smartphone"
               fill
               className="object-cover"
@@ -85,3 +85,4 @@ export function HomeAutomationSection() {
     </section>
   );
 }
+

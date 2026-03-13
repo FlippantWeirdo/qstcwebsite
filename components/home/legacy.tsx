@@ -65,7 +65,7 @@ export function Legacy() {
             >
               <div className="absolute inset-0 bg-slate-200" />
               <Image
-                src="/images/services/laptop.png"
+                src="/images/services/laptop.webp"
                 alt="Professional desk setup"
                 fill
                 className="object-cover"
@@ -79,7 +79,7 @@ export function Legacy() {
             >
               <div className="absolute inset-0 bg-slate-200" />
               <Image
-                src="/images/20250220_093416.jpg"
+                src="/images/20250220_093416.webp"
                 alt="Architectural blueprints"
                 fill
                 className="object-cover"
@@ -102,3 +102,4 @@ export function Legacy() {
     </section>
   );
 }
+

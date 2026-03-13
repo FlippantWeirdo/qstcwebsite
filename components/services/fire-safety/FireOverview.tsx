@@ -95,10 +95,11 @@ export function FireOverview() {
 
           <div className="overview-image relative h-[600px] w-full rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/IMG_8935.jpg"
+              src="/images/IMG_8935.webp"
               alt="VESDA Panel Technician"
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
             <div className="absolute inset-0 bg-linear-to-t from-gray-900/40 to-transparent"></div>
             {/* <div className="absolute bottom-6 right-8 bg-blue-600 text-white py-2 px-6 rounded-lg font-bold text-2xl shadow-lg">
@@ -110,3 +111,4 @@ export function FireOverview() {
     </section>
   );
 }
+

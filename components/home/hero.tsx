@@ -9,9 +9,9 @@ import { useGSAP } from "@gsap/react";
 import { Button } from "@/components/ui/button";
 
 const images = [
-  "/images/hero/server.png",
-  "/images/hero/security.png",
-  "/images/hero/smarthome.png",
+  "/images/hero/server.webp",
+  "/images/hero/security.webp",
+  "/images/hero/smarthome.webp",
 ];
 
 export function Hero() {
@@ -165,3 +165,4 @@ export function Hero() {
     </section>
   );
 }
+

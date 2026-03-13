@@ -29,7 +29,7 @@ export function ElectricPowerHero() {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/services/electric_power.png"
+          src="/images/services/electric_power.webp"
           alt="High-tech industrial Electrical Power Distribution"
           fill
           className="object-cover brightness-[0.3]"
@@ -54,3 +54,4 @@ export function ElectricPowerHero() {
     </section>
   );
 }
+

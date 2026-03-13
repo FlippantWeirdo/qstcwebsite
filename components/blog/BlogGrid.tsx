@@ -112,3 +112,4 @@ export function BlogGrid({ posts }: { posts: BlogPost[] }) {
     </section>
   );
 }
+

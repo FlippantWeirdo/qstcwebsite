@@ -74,7 +74,7 @@ export function FireDetection() {
         <div className="detection-images grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl border border-gray-800">
             <Image
-              src="/images/1000279224.jpg"
+              src="/images/1000279224.webp"
               alt="Fire Alarm Control Panel"
               fill
               className="object-cover"
@@ -82,7 +82,7 @@ export function FireDetection() {
           </div>
           <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl border border-gray-800">
             <Image
-              src="/images/IMG_8870.jpg"
+              src="/images/IMG_8870.webp"
               alt="Fire Alarm Control Board"
               fill
               className="object-cover"
@@ -93,3 +93,4 @@ export function FireDetection() {
     </section>
   );
 }
+

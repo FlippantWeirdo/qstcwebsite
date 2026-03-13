@@ -93,7 +93,7 @@ export function ElectricPowerOverview() {
 
           <div className="pow-image relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/IMG_8008.jpg"
+              src="/images/IMG_8008.webp"
               alt="Electrical Breaker Panel and Distribution System"
               fill
               className="object-cover"
@@ -104,3 +104,4 @@ export function ElectricPowerOverview() {
     </section>
   );
 }
+

@@ -29,7 +29,7 @@ export function ProjectsHero() {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/projects/enterprise.png"
+          src="/images/projects/enterprise.webp"
           alt="QSTC Projects Portfolio"
           fill
           className="object-cover brightness-[0.3]"
@@ -54,3 +54,4 @@ export function ProjectsHero() {
     </section>
   );
 }
+

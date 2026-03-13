@@ -64,7 +64,7 @@ export function FireFighting() {
         <div className="fighting-images grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="relative h-[450px] w-full rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/20250910_150440.jpg"
+              src="/images/20250910_150440.webp"
               alt="Outdoor Fire Extinguishing Pipes"
               fill
               className="object-cover"
@@ -72,7 +72,7 @@ export function FireFighting() {
           </div>
           <div className="relative h-[450px] w-full rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/1000225750.jpg"
+              src="/images/1000225750.webp"
               alt="Outdoor Fire Valves Details"
               fill
               className="object-cover"
@@ -84,3 +84,4 @@ export function FireFighting() {
     </section>
   );
 }
+

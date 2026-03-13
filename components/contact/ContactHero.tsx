@@ -29,11 +29,12 @@ export function ContactHero() {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/contact_hero.png"
+          src="/images/contact_hero.webp"
           alt="Contact QSTC"
           fill
           className="object-cover brightness-[0.3]"
           priority
+          sizes="100vw"
         />
       </div>
 
@@ -53,3 +54,4 @@ export function ContactHero() {
     </section>
   );
 }
+

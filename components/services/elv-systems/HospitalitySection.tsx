@@ -80,7 +80,7 @@ export function HospitalitySection() {
 
           <div className="hosp-image relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/10">
             <Image
-              src="/images/services/hotel_lock.png"
+              src="/images/services/hotel_lock.webp"
               alt="Electronic Hotel Lock and Modern Hospitality Solutions"
               fill
               className="object-cover"
@@ -91,3 +91,4 @@ export function HospitalitySection() {
     </section>
   );
 }
+
