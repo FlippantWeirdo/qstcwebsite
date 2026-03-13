@@ -64,7 +64,7 @@ export function FireFighting() {
         <div className="fighting-images grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="relative h-[450px] w-full rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/services/fire_pipes_1772915775764.png"
+              src="/images/20250910_150440.jpg"
               alt="Outdoor Fire Extinguishing Pipes"
               fill
               className="object-cover"
@@ -72,11 +72,11 @@ export function FireFighting() {
           </div>
           <div className="relative h-[450px] w-full rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/services/fire_pipes_1772915775764.png"
+              src="/images/1000225750.jpg"
               alt="Outdoor Fire Valves Details"
               fill
               className="object-cover"
-              style={{ objectPosition: "75% 50%" }} // Shifted focus for visual variety since we generated 1 image
+              style={{ objectPosition: "75% 50%" }}
             />
           </div>
         </div>

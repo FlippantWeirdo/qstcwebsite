@@ -128,7 +128,7 @@ export function OurBusinessPhilosophy() {
                 </AccordionItem>
                 <AccordionItem
                   value="item-3"
-                  className="border-b border-gray-200 py-2 border-b-0"
+                  className="border-b border-gray-200 py-2"
                 >
                   <AccordionTrigger className="text-xl font-bold text-[#111827] hover:no-underline hover:text-[#3B82F6] transition-colors">
                     We Train & Support
@@ -152,7 +152,7 @@ export function OurBusinessPhilosophy() {
           <div className="relative mt-8 lg:mt-0 pt-12 lg:pt-0">
             <div className="philosophy-image relative h-[650px] w-full rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/about/philosophy.png"
+                src="/images/20250220_093416.jpg"
                 alt="Engineers discussing project in a modern office"
                 fill
                 className="object-cover"

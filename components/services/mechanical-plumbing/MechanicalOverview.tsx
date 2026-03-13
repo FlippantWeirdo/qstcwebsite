@@ -22,7 +22,7 @@ const systems = [
       "Ventilation and air quality control",
       "Energy-efficient heat recovery systems",
     ],
-    image: "/images/services/mechanical_overview.png",
+    image: "/images/IMG_8008.jpg",
   },
   {
     title: "Water Supply Systems",
@@ -35,7 +35,7 @@ const systems = [
       "Water storage tanks and reservoirs",
       "Hot water circulation systems",
     ],
-    image: "/images/services/mechanical_overview.png",
+    image: "/images/IMG_8008.jpg",
   },
   {
     title: "Drainage & Sewerage Systems",
@@ -48,7 +48,7 @@ const systems = [
       "Grease trap systems",
       "Sump pump installations",
     ],
-    image: "/images/services/mechanical_hero.png",
+    image: "/images/IMG_8981.jpg",
   },
 ];
 

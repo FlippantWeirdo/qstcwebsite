@@ -30,7 +30,7 @@ export function FireSafetyHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/services/fire_safety_hero_1772915714224.png" // We'll update the name to generic later or just use it as is if it copies cleanly
+          src="/images/1000125275.jpg"
           alt="Fire Safety Operations"
           fill
           className="object-cover brightness-[0.4]"

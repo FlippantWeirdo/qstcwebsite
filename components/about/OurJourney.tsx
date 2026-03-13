@@ -106,7 +106,7 @@ export function OurJourney() {
           <div className="relative mt-12 lg:mt-0 pl-4 sm:pl-16">
             <div className="journey-image relative h-[550px] w-full rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/about/journey.png"
+                src="/images/IMG_2057.jpg"
                 alt="Technician working on server rack"
                 fill
                 className="object-cover"

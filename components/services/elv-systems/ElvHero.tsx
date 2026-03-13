@@ -30,7 +30,7 @@ export function ElvHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/services/elv_hero.png"
+          src="/images/20250828_130608.jpg"
           alt="ELV Security Systems"
           fill
           className="object-cover brightness-[0.4]"

@@ -98,7 +98,7 @@ export function ElvOverview() {
 
           <div className="overview-image relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/services/cctv_server.png"
+              src="/images/IMG_9437.jpg"
               alt="CCTV and Server Infrastructure"
               fill
               className="object-cover"

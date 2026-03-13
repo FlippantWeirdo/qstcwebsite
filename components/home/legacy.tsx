@@ -60,12 +60,12 @@ export function Legacy() {
           <div className="relative h-[600px] w-full lg:h-[700px] flex items-center justify-center">
             {/* 1. Left Middle Image (Laptop) */}
             <div
-              className="absolute left-0 top-1/4 z-20 w-[55%] aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl animate-float-card"
+              className="absolute left-0 top-1/4 z-20 w-[55%] aspect-4/5 rounded-2xl overflow-hidden shadow-2xl animate-float-card"
               style={{ animationDelay: "0s" }}
             >
               <div className="absolute inset-0 bg-slate-200" />
               <Image
-                src="/images/legacy/laptop.png"
+                src="/images/services/laptop.png"
                 alt="Professional desk setup"
                 fill
                 className="object-cover"
@@ -79,7 +79,7 @@ export function Legacy() {
             >
               <div className="absolute inset-0 bg-slate-200" />
               <Image
-                src="/images/legacy/blueprints.png"
+                src="/images/20250220_093416.jpg"
                 alt="Architectural blueprints"
                 fill
                 className="object-cover"

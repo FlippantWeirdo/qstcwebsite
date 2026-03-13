@@ -85,7 +85,7 @@ export function FireOverview() {
                     key={idx}
                     className="flex items-start gap-3 text-gray-700"
                   >
-                    <CheckCircle2 className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
                     <span className="text-lg">{item}</span>
                   </li>
                 ))}
@@ -95,12 +95,12 @@ export function FireOverview() {
 
           <div className="overview-image relative h-[600px] w-full rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/services/fire_cylinders_1772915728738.png"
-              alt="Automatic Fire Fighting Cylinders"
+              src="/images/IMG_8935.jpg"
+              alt="VESDA Panel Technician"
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-gray-900/40 to-transparent"></div>
             {/* <div className="absolute bottom-6 right-8 bg-blue-600 text-white py-2 px-6 rounded-lg font-bold text-2xl shadow-lg">
               04
             </div> */}

@@ -9,11 +9,11 @@ export function About() {
           {/* Left Column: Image & Floating Badge */}
           <div className="relative">
             {/* Main Image Container */}
-            <div className="relative aspect-square w-full max-w-[500px] overflow-hidden rounded-3xl lg:aspect-[4/5] lg:mr-auto">
+            <div className="relative aspect-square w-full max-w-[500px] overflow-hidden rounded-3xl lg:aspect-4/5 lg:mr-auto">
               {/* Fallback gray bg while image loads */}
               <div className="absolute inset-0 bg-gray-100" />
               <Image
-                src="/images/about/office.png"
+                src="/images/IMG_9008.jpg"
                 alt="Modern corporate office interior"
                 fill
                 className="object-cover object-center"
