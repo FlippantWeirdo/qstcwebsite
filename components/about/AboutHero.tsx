@@ -73,8 +73,7 @@ export function AboutHero() {
       </div>
 
       {/* Bottom Gradient Overlay (optional, for smoother transition to next section) */}
-      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-gray-50 to-transparent dark:from-black" />
+      <div className="absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-gray-50 to-transparent dark:from-black" />
     </section>
   );
 }
-

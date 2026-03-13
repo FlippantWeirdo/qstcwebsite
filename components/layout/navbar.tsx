@@ -215,7 +215,7 @@ export function Navbar() {
 
             {/* Mobile Logo */}
             <div className="flex items-center gap-2.5 border-b border-gray-100 px-6 py-5 dark:border-white/10">
-              <Image src="/logo.webp" alt="Logo" width={100} height={100} />
+              <Image src="/logov2.png" alt="Logo" width={100} height={100} />
             </div>
 
             {/* Mobile Links */}

@@ -40,7 +40,7 @@ export function AboutCta() {
   return (
     <section ref={container} className="bg-white py-24 px-6 lg:px-12">
       <div className="container mx-auto max-w-5xl">
-        <div className="cta-bg relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#1E3A8A] via-[#2563EB] to-[#3B82F6] px-8 py-16 shadow-2xl md:px-16 md:py-20 text-center">
+        <div className="cta-bg relative overflow-hidden rounded-3xl bg-linear-to-br from-[#1E3A8A] via-[#2563EB] to-[#3B82F6] px-8 py-16 shadow-2xl md:px-16 md:py-20 text-center">
           {/* Decorative background blur elements */}
           <div className="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
           <div className="absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-blue-400/20 blur-3xl" />
@@ -70,4 +70,3 @@ export function AboutCta() {
     </section>
   );
 }
-
