@@ -92,8 +92,8 @@ export function PartnersMarquee() {
       {/* Marquee Container */}
       <div className="marquee-wrapper w-full bg-white py-4 relative">
         {/* Soft gradient fades on edges */}
-        <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-white to-transparent z-10"></div>
-        <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-white to-transparent z-10"></div>
+        <div className="absolute top-0 left-0 w-32 h-full bg-linear-to-r from-white to-transparent z-10"></div>
+        <div className="absolute top-0 right-0 w-32 h-full bg-linear-to-l from-white to-transparent z-10"></div>
 
         <div className="marquee flex whitespace-nowrap">
           <div className="marquee-content">

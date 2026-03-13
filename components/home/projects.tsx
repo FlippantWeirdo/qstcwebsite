@@ -36,7 +36,7 @@ export function Projects() {
           {featured.map((project, index) => (
             <div
               key={index}
-              className="group relative aspect-[4/5] w-full cursor-pointer overflow-hidden rounded-3xl transition-all duration-500 hover:z-10 hover:scale-110 hover:shadow-2xl hover:shadow-[#3B82F6]/20"
+              className="group relative aspect-4/5 w-full cursor-pointer overflow-hidden rounded-3xl transition-all duration-500 hover:z-10 hover:scale-110 hover:shadow-2xl hover:shadow-[#3B82F6]/20"
             >
               <Image
                 src={project.image}
@@ -46,7 +46,7 @@ export function Projects() {
               />
 
               {/* Gradient overlay for text readability */}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent transition-opacity duration-500 group-hover:opacity-90" />
+              <div className="absolute inset-0 bg-linear-to-t from-slate-950/90 via-slate-950/20 to-transparent transition-opacity duration-500 group-hover:opacity-90" />
 
               {/* Text content pinned to the bottom */}
               <div className="absolute bottom-0 left-0 flex w-full flex-col justify-end p-8">
@@ -64,4 +64,3 @@ export function Projects() {
     </section>
   );
 }
-
