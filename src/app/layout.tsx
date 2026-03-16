@@ -17,7 +17,37 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "QSTC Services Limited | ELV, Automation & System Integration",
   description:
-    "QSTC Services Limited delivers expert solutions in Extra Low Voltage (ELV) systems, Building Automation, and System Integration across Nigeria.",
+    "QSTC Services Limited delivers expert solutions in Extra Low Voltage (ELV) systems, Building Automation, Fire Safety and System Integration across Nigeria.",
+  keywords: [
+    "QSTC",
+    "ELV",
+    "Automation",
+    "System Integration",
+    "Fire Safety",
+    "Building Automation",
+    "Mechanical & Plumbing",
+    "Electric Power Solutions",
+    "IT Infrastructure",
+    "Access Control",
+    "QSTC Services Limited",
+    "Nigeria",
+  ],
+  openGraph: {
+    title: "QSTC Services Limited | ELV, Automation & System Integration",
+    description:
+      "QSTC Services Limited delivers expert solutions in Extra Low Voltage (ELV) systems, Building Automation, Fire Safety and System Integration across Nigeria.",
+    type: "website",
+    locale: "en_NG",
+    siteName: "QSTC Services Limited",
+    images: [
+      {
+        url: "/images/qstc-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "QSTC Services Limited",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

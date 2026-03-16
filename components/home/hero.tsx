@@ -7,6 +7,7 @@ import { Download } from "lucide-react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Button } from "@/components/ui/button";
+import { DownloadProfileSheet } from "@/components/DownloadProfileSheet";
 
 const images = [
   "/images/hero/server.webp",
@@ -144,25 +145,23 @@ export function Hero() {
               </Button>
             </div>
             <div className="hero-btn">
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="rounded-lg border-white/20 bg-white/5 px-8 py-6 text-base font-semibold text-white shadow-none backdrop-blur-md transition-colors hover:bg-white/10 hover:text-white"
-              >
-                <a href="/documents/QSTC-Corporate-Profile_.pdf" download>
+              <DownloadProfileSheet>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="rounded-lg border-white/20 bg-white/5 px-8 py-6 text-base font-semibold text-white shadow-none backdrop-blur-md transition-colors hover:bg-white/10 hover:text-white"
+                >
                   <Download className="h-5 w-5 mr-2" />
                   Download Profile
-                </a>
-              </Button>
+                </Button>
+              </DownloadProfileSheet>
             </div>
           </div>
         </div>
       </div>
 
       {/* Bottom Gradient overlay */}
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-gray-50 to-transparent dark:from-black" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-t from-gray-50 to-transparent dark:from-black" />
     </section>
   );
 }
-

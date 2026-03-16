@@ -77,12 +77,12 @@ export function FireDetection() {
               src="/images/1000279224.webp"
               alt="Fire Alarm Control Panel"
               fill
-              className="object-cover"
+              className="object-fill rotate-90"
             />
           </div>
           <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl border border-gray-800">
             <Image
-              src="/images/IMG_8870.webp"
+              src="/images/Gas-Detection-Control-Panel.jpg"
               alt="Fire Alarm Control Board"
               fill
               className="object-cover"
@@ -93,4 +93,3 @@ export function FireDetection() {
     </section>
   );
 }
-

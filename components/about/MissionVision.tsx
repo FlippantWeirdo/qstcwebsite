@@ -89,13 +89,13 @@ export function MissionVision() {
             return (
               <div
                 key={index}
-                className="mission-card group relative bg-white rounded-2xl p-8 lg:p-10 border border-slate-100 hover:border-blue-200 hover:bg-gradient-to-br hover:from-blue-50/50 hover:to-white hover:shadow-xl hover:shadow-blue-100/40 hover:-translate-y-1.5 transition-all duration-400"
+                className="mission-card group relative bg-white rounded-2xl p-8 lg:p-10 border border-slate-100 hover:border-blue-200 hover:bg-linear-to-br hover:from-blue-50/50 hover:to-white hover:shadow-xl hover:shadow-blue-100/40 hover:-translate-y-1.5 transition-all duration-400"
               >
                 {/* Decorative corner accent */}
-                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-blue-50 to-transparent rounded-tr-2xl rounded-bl-[3rem] opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
+                <div className="absolute top-0 right-0 w-20 h-20 bg-linear-to-bl from-blue-50 to-transparent rounded-tr-2xl rounded-bl-[3rem] opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
 
                 {/* Icon */}
-                <div className="relative bg-gradient-to-br from-[#3B82F6] to-[#1D4ED8] w-14 h-14 rounded-xl flex items-center justify-center mb-6 shadow-md shadow-blue-200/50 group-hover:scale-110 transition-transform duration-300">
+                <div className="relative bg-linear-to-br from-[#3B82F6] to-[#1D4ED8] w-14 h-14 rounded-xl flex items-center justify-center mb-6 shadow-md shadow-blue-200/50 group-hover:scale-110 transition-transform duration-300">
                   <Icon className="w-7 h-7 text-white" strokeWidth={1.8} />
                 </div>
 
@@ -108,7 +108,7 @@ export function MissionVision() {
                 </p>
 
                 {/* Bottom accent line */}
-                <div className="absolute bottom-0 left-8 right-8 h-0.5 bg-gradient-to-r from-transparent via-[#3B82F6] to-transparent opacity-0 group-hover:opacity-40 transition-opacity duration-400 rounded-full" />
+                <div className="absolute bottom-0 left-8 right-8 h-0.5 bg-linear-to-r from-transparent via-[#3B82F6] to-transparent opacity-0 group-hover:opacity-40 transition-opacity duration-400 rounded-full" />
               </div>
             );
           })}
@@ -117,4 +117,3 @@ export function MissionVision() {
     </section>
   );
 }
-

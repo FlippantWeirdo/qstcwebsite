@@ -93,7 +93,7 @@ export function OurJourney() {
               </div>
               <div className="border-l-[3px] border-[#3B82F6] pl-6 py-1">
                 <div className="text-4xl font-extrabold text-[#3B82F6] mb-2">
-                  500+
+                  300+
                 </div>
                 <div className="text-xs font-bold text-[#6B7280] tracking-widest uppercase">
                   Projects Completed
@@ -125,4 +125,3 @@ export function OurJourney() {
     </section>
   );
 }
-

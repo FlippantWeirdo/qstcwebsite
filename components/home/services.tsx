@@ -84,13 +84,13 @@ export function Services() {
       tl.fromTo(
         ".services-heading",
         { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
       );
 
       tl.fromTo(
         ".services-subtitle",
         { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
         "-=0.6",
       );
 
@@ -100,7 +100,7 @@ export function Services() {
         {
           y: 0,
           opacity: 1,
-          duration: 0.8,
+          duration: 0.5,
           stagger: 0.15,
           ease: "back.out(1.5)",
         },
@@ -169,4 +169,3 @@ export function Services() {
     </section>
   );
 }
-

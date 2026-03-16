@@ -33,7 +33,7 @@ export function About() {
               `}</style>
               <div className="flex aspect-square w-32 flex-col items-center justify-center rounded-2xl bg-[#3B82F6] p-4 text-center text-white shadow-xl shadow-blue-500/30 sm:w-40 sm:p-6 lg:w-48 lg:p-8">
                 <span className="mb-1 text-3xl font-bold leading-none tracking-tight sm:text-4xl lg:text-5xl">
-                  15+
+                  20+
                 </span>
                 <span className="text-[10px] font-semibold uppercase leading-tight tracking-wider sm:text-xs">
                   Years of
@@ -92,4 +92,3 @@ export function About() {
     </section>
   );
 }
-

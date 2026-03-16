@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Download, Mail, Share2, Rss } from "lucide-react";
+import { DownloadProfileSheet } from "@/components/DownloadProfileSheet";
 
 export function Footer() {
   return (
@@ -113,14 +114,12 @@ export function Footer() {
           <div className="flex flex-col space-y-4 lg:pl-8">
             <h4 className="font-bold text-[#3B82F6]">Resources</h4>
             <div className="flex flex-col space-y-6 mt-2">
-              <a
-                href="/documents/QSTC-Corporate-Profile_.pdf"
-                download
-                className="flex w-full items-center justify-center gap-2 rounded-lg border border-slate-800 bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition-all hover:bg-slate-800 hover:border-slate-700"
-              >
-                <Download className="h-4 w-4" />
-                Company Profile PDF
-              </a>
+              <DownloadProfileSheet>
+                <button className="flex w-full items-center justify-center gap-2 rounded-lg border border-slate-800 bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition-all hover:bg-slate-800 hover:border-slate-700">
+                  <Download className="h-4 w-4" />
+                  Company Profile PDF
+                </button>
+              </DownloadProfileSheet>
               <a
                 href="mailto:info@qstcng.com"
                 className="flex items-center gap-3 text-sm text-slate-400 transition-colors hover:text-white"

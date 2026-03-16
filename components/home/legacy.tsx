@@ -39,7 +39,7 @@ export function Legacy() {
             <div className="grid grid-cols-2 gap-8">
               <div>
                 <span className="block mb-1 text-3xl font-extrabold text-[#3B82F6] md:text-4xl">
-                  150+
+                  300+
                 </span>
                 <span className="text-sm font-medium text-slate-500">
                   Projects Completed
@@ -50,7 +50,7 @@ export function Legacy() {
                   20+
                 </span>
                 <span className="text-sm font-medium text-slate-500">
-                  Industry Awards
+                  Years of Experience
                 </span>
               </div>
             </div>
@@ -102,4 +102,3 @@ export function Legacy() {
     </section>
   );
 }
-

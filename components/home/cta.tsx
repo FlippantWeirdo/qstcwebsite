@@ -6,6 +6,7 @@ import { Download, ArrowRight } from "lucide-react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { DownloadProfileSheet } from "@/components/DownloadProfileSheet";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,14 +58,12 @@ export function Cta() {
             </p>
 
             <div className="flex flex-col w-full max-w-md gap-4 sm:max-w-none sm:flex-row sm:justify-center">
-              <a
-                href="/documents/QSTC-Corporate-Profile_.pdf"
-                download
-                className="flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 font-bold text-[#2563EB] shadow-lg transition-all hover:-translate-y-1 hover:bg-blue-50 hover:shadow-xl hover:shadow-black/10"
-              >
-                <Download className="h-5 w-5" />
-                Download Profile (PDF)
-              </a>
+              <DownloadProfileSheet>
+                <button className="flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 font-bold text-[#2563EB] shadow-lg transition-all hover:-translate-y-1 hover:bg-blue-50 hover:shadow-xl hover:shadow-black/10">
+                  <Download className="h-5 w-5" />
+                  Download Profile (PDF)
+                </button>
+              </DownloadProfileSheet>
 
               <Link
                 href="/contact"
