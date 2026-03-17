@@ -29,7 +29,7 @@ export function OurBusinessPhilosophy() {
       tl.fromTo(
         ".philosophy-heading",
         { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
       );
 
       tl.fromTo(
@@ -42,7 +42,7 @@ export function OurBusinessPhilosophy() {
       tl.fromTo(
         ".philosophy-accordion",
         { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
         "-=0.2",
       );
 
@@ -164,4 +164,3 @@ export function OurBusinessPhilosophy() {
     </section>
   );
 }
-

@@ -6,8 +6,8 @@ import {
   MoveRight,
   Cpu,
   Video,
-  Bot,
   Lock,
+  Lightbulb,
   Flame,
   Thermometer,
   Wrench,
@@ -27,36 +27,15 @@ const services = [
     href: "/services/elvsystems",
   },
   {
-    icon: Video,
-    title: "CCTV & Surveillance",
-    description:
-      "High-definition monitoring and intelligent video analytics for comprehensive security.",
-    href: "/services/elvsystems",
-  },
-  {
-    icon: Bot,
-    title: "Automation Systems",
-    description:
-      "Smart building technology designed to optimize efficiency and user comfort.",
-    href: "/services/bms",
-  },
-  {
-    icon: Lock,
-    title: "Access Control",
-    description:
-      "Secure entry management solutions using biometric and RFID technologies.",
-    href: "/services/elvsystems",
-  },
-  {
     icon: Flame,
     title: "Fire Safety",
     description:
       "Advanced detection, alarm, and suppression systems to protect life and property.",
-    href: "/services/fire-detection-firefighting",
+    href: "/services/fire-safety",
   },
   {
     icon: Thermometer,
-    title: "Building Management",
+    title: "Building Management Systems",
     description:
       "Integrated climate control and energy management for sustainable operations.",
     href: "/services/bms",
@@ -66,6 +45,13 @@ const services = [
     title: "Mechanical & Plumbing",
     description: "Comprehensive HVAC, water supply, and drainage solutions.",
     href: "/services/mechanical-plumbing",
+  },
+  {
+    icon: Lightbulb,
+    title: "Electrical Power Solutions",
+    description:
+      "Reliable power distribution and backup systems including UPS and generators.",
+    href: "/services/electric-power-solutions",
   },
 ];
 

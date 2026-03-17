@@ -45,7 +45,7 @@ export function ElvOverview() {
       tl.fromTo(
         ".overview-text > *",
         { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, stagger: 0.1, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, stagger: 0.1, ease: "power3.out" },
       );
 
       tl.fromTo(
@@ -58,7 +58,7 @@ export function ElvOverview() {
       tl.fromTo(
         ".overview-image",
         { scale: 0.95, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 0.8, ease: "power3.out" },
+        { scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" },
         "-=0.6",
       );
     },
@@ -109,4 +109,3 @@ export function ElvOverview() {
     </section>
   );
 }
-

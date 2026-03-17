@@ -30,7 +30,7 @@ export function BlogGrid({ posts }: { posts: BlogPost[] }) {
         {
           y: 0,
           opacity: 1,
-          duration: 0.8,
+          duration: 0.5,
           stagger: 0.15,
           ease: "power3.out",
           scrollTrigger: {
@@ -112,4 +112,3 @@ export function BlogGrid({ posts }: { posts: BlogPost[] }) {
     </section>
   );
 }
-

@@ -29,13 +29,13 @@ export function QuoteStats() {
       tl.fromTo(
         ".quote-mark",
         { scale: 0, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 0.8, ease: "back.out(2)" },
+        { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(2)" },
       );
 
       tl.fromTo(
         ".quote-text",
         { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
         "-=0.4",
       );
 
@@ -49,7 +49,7 @@ export function QuoteStats() {
       tl.fromTo(
         ".stat-card",
         { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, stagger: 0.2, ease: "power3.out" },
         "-=0.2",
       );
     },
@@ -98,4 +98,3 @@ export function QuoteStats() {
     </section>
   );
 }
-

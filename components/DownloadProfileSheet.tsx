@@ -35,7 +35,7 @@ export function DownloadProfileSheet({ children }: DownloadProfileSheetProps) {
 
     try {
       // Using Formspree like in ContactForm
-      const response = await fetch("https://formspree.io/f/xgonnqpp", {
+      const response = await fetch(" ", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
@@ -44,12 +44,14 @@ export function DownloadProfileSheet({ children }: DownloadProfileSheetProps) {
         },
       });
 
+      // https://formspree.io/f/xgonnqpp
+
       if (response.ok) {
         setStatus("success");
         // Trigger download
         const link = document.createElement("a");
-        link.href = "/documents/QSTC-Corporate-Profile_.pdf";
-        link.download = "QSTC-Corporate-Profile_.pdf";
+        link.href = "/document/QSTC-Corporate-Profile.pdf";
+        link.download = "QSTC-Corporate-Profile.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -116,7 +118,7 @@ export function DownloadProfileSheet({ children }: DownloadProfileSheetProps) {
                 </div>
 
                 <a
-                  href="/documents/QSTC-Corporate-Profile_.pdf"
+                  href="/document/QSTC-Corporate-Profile.pdf"
                   download
                   className="group relative inline-flex items-center justify-center gap-3 rounded-2xl bg-[#3B82F6] px-10 py-5 font-bold text-white"
                 >

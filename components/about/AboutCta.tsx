@@ -30,7 +30,7 @@ export function AboutCta() {
       tl.fromTo(
         ".cta-content > *",
         { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, stagger: 0.15, ease: "power3.out" },
         "-=0.6",
       );
     },

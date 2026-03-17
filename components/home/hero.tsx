@@ -35,7 +35,7 @@ export function Hero() {
       tl.fromTo(
         ".hero-tag",
         { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
       );
 
       // Main heading staggered words
@@ -59,7 +59,7 @@ export function Hero() {
         {
           y: 0,
           opacity: 1,
-          duration: 0.8,
+          duration: 0.5,
           ease: "power3.out",
         },
         "-=0.6",

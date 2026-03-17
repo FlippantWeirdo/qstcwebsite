@@ -16,7 +16,7 @@ export default function NotFound() {
       gsap.fromTo(
         ".error-content > *",
         { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, stagger: 0.15, ease: "power3.out" },
       );
 
       // CCTV Lens Animation (subtle looking around)

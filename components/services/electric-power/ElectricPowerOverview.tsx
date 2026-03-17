@@ -26,7 +26,7 @@ export function ElectricPowerOverview() {
       tl.fromTo(
         ".pow-text > *",
         { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, stagger: 0.15, ease: "power3.out" },
       );
 
       tl.fromTo(
@@ -39,7 +39,7 @@ export function ElectricPowerOverview() {
       tl.fromTo(
         ".pow-image",
         { scale: 0.95, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 0.8, ease: "power3.out" },
+        { scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" },
         "-=0.6",
       );
     },
@@ -93,7 +93,7 @@ export function ElectricPowerOverview() {
 
           <div className="pow-image relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/power_guys.png"
+              src="/images/Power_guys.png"
               alt="Electrical Breaker Panel and Distribution System"
               fill
               className="object-cover"

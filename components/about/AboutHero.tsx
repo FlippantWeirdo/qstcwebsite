@@ -16,14 +16,14 @@ export function AboutHero() {
       tl.fromTo(
         ".hero-badge",
         { y: -20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
       );
 
       // Main heading
       tl.fromTo(
         ".hero-heading",
         { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
         "-=0.4",
       );
 
@@ -31,7 +31,7 @@ export function AboutHero() {
       tl.fromTo(
         ".hero-subtitle",
         { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
         "-=0.5",
       );
     },

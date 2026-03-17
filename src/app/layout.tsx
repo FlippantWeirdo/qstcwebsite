@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "QSTC Services Limited",
     images: [
       {
-        url: "/images/qstc-logo.png",
+        url: "/qstc-logo.png",
         width: 1200,
         height: 630,
         alt: "QSTC Services Limited",

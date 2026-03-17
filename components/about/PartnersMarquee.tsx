@@ -33,7 +33,7 @@ export function PartnersMarquee() {
       tl.fromTo(
         ".marquee-heading",
         { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
       );
 
       tl.fromTo(

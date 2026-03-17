@@ -36,14 +36,42 @@ export const projects: Project[] = [
   },
   {
     title:
-      "Commissioning of Addressable Fire Detection, Novec Automatic Fire Fighting, VESDA Systems for Data Center",
+      "Commissioning of BMS, Addressable Fire Detection, Novec Automatic Fire Fighting, VESDA Systems for MainOne / Equinix, Lekki, Lagos",
     category: "Fire Safety",
     image: "/images/projects/residential.webp",
   },
+
+  // ── Electrical "Power Systems" ──────────────────────────────
+  {
+    title:
+      "15MVA 33/11KV Transformer Substation and MV Distribution Panels Supplying Power to a Military Base",
+    category: "Electrical Power Systems",
+    image: "/images/projects/industrial.webp",
+  },
+  {
+    title:
+      "5 x 2MW MWM 11KV Gas Generators complete with Synchronization and Distribution Panels, all Stepped up to 33KV through a 10.5MVA 11/33KV Transformer Installed at CELPLAS FZE Shagamu",
+    category: "Electrical Power Systems",
+    image: "/images/projects/enterprise.webp",
+  },
+
+  // ── Mechanical & Plumbing ──────────────────────────────────
   {
     title:
       "Supply & Installation of 500GPM & 300GPM Fire Pumps for Mamuda Beverages & Foods - Kano",
-    category: "Fire Safety",
+    category: "Mechanical & Plumbing",
+    image: "/images/projects/industrial.webp",
+  },
+  {
+    title:
+      "CCHP System (Electrical Power, Waste Heat Recovery Boiler and Absorption Chiller) derived from a 1.5MW CAT Gas Generator Installed and Commissioned at Sweetco Foods",
+    category: "Mechanical & Plumbing",
+    image: "/images/projects/enterprise.webp",
+  },
+  {
+    title:
+      "Water treatment plant at Big Bottling Company Ltd, Agbara Ogun state",
+    category: "Mechanical & Plumbing",
     image: "/images/projects/industrial.webp",
   },
 

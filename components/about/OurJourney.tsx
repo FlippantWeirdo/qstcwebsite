@@ -24,7 +24,7 @@ export function OurJourney() {
       tl.fromTo(
         ".journey-content > *",
         { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: "power3.out" },
+        { y: 0, opacity: 1, duration: 0.5, stagger: 0.15, ease: "power3.out" },
       );
 
       tl.fromTo(
@@ -37,7 +37,7 @@ export function OurJourney() {
       tl.fromTo(
         ".journey-badge",
         { x: -30, opacity: 0 },
-        { x: 0, opacity: 1, duration: 0.8, ease: "back.out(1.7)" },
+        { x: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" },
         "-=0.4",
       );
     },
