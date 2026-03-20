@@ -91,11 +91,11 @@ export function Navbar() {
           : "bg-transparent",
       )}
     >
-      <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-2 sm:pr-6 lg:px-8">
+      <nav className="container mx-auto flex h-16 items-center justify-between lg:px-4">
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center rounded-lg px-1 sm:pr-1.5 transition-all"
+          className="flex items-center rounded-lg pr-1 sm:pr-1.5 transition-all"
         >
           <Image
             src={
