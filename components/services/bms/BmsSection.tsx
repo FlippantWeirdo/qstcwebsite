@@ -59,7 +59,7 @@ export function BmsSection() {
               Building & Energy Management Solutions
             </h2>
 
-            <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
+            <div className="space-y-4 text-gray-600 text-lg text-justify hyphens-auto leading-relaxed">
               <p>
                 Few of the challenges facing Building owners and Facility
                 Managers in this era are:

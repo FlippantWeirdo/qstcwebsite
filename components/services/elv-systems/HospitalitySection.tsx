@@ -50,7 +50,7 @@ export function HospitalitySection() {
               Hospitality Solutions
             </h2>
 
-            <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+            <div className="space-y-6 text-gray-300 text-lg text-justify leading-relaxed">
               <p>
                 We add value to any hotel by providing secure and a reliable
                 wire or wire-free environment 24/7, covering access management
@@ -71,8 +71,10 @@ export function HospitalitySection() {
                     video to engage, inform and entertain
                   </li>
                   <li>Motorized doors and gates</li>
-                  <li>Telephone Intercom and lastly</li>
+                  <li>Energy Management System (EMS)</li>
+                  <li>Telephone Intercom</li>
                   <li>Data networks</li>
+                  <li>Guest Room Management System (GRMS)</li>
                 </ul>
               </div>
             </div>
@@ -80,7 +82,7 @@ export function HospitalitySection() {
 
           <div className="hosp-image relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/10">
             <Image
-              src="/images/services/hotel_lock.webp"
+              src="/images/projects/hospitality_lux.webp"
               alt="Electronic Hotel Lock and Modern Hospitality Solutions"
               fill
               className="object-cover"

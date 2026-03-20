@@ -99,7 +99,7 @@ export function Footer() {
                 href="/services/electric-power-solutions"
                 className="transition-colors hover:text-white"
               >
-                Electric Power Solutions
+                Power and Electrical
               </Link>
               <Link
                 href="/services/mechanical-plumbing"

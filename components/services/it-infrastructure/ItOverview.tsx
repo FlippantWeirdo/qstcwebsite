@@ -54,7 +54,7 @@ export function ItOverview() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               The Engine of Modern Business
             </h2>
-            <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
+            <div className="space-y-4 text-lg text-gray-600 text-justify hyphens-auto leading-relaxed">
               <p>
                 Basically, IT infrastructure is the combined set of hardware,
                 software, network resources, and services required for the
@@ -96,7 +96,7 @@ export function ItOverview() {
 
           <div className="overview-image relative h-[700px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/20250828_120213.webp"
+              src="/images/projects/IT-infrastructure.webp"
               alt="Network Infrastructures and Server Hardware"
               fill
               className="object-cover"

@@ -128,7 +128,7 @@ export function DownloadProfileSheet({ children }: DownloadProfileSheetProps) {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-8 pb-10">
-                <div className="space-y-3.5 group">
+                {/* <div className="space-y-3.5 group">
                   <label
                     htmlFor="company"
                     className="text-xs font-bold text-[#3B82F6] ml-1 tracking-widest uppercase opacity-80"
@@ -143,7 +143,7 @@ export function DownloadProfileSheet({ children }: DownloadProfileSheetProps) {
                     placeholder="e.g. Acme Corporation"
                     className="w-full h-14 px-5 bg-gray-50/50 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-600/50 focus:bg-white transition-all duration-300 placeholder:text-gray-400"
                   />
-                </div>
+                </div> */}
 
                 <div className="space-y-3.5 group">
                   <label

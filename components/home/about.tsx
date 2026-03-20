@@ -13,7 +13,7 @@ export function About() {
               {/* Fallback gray bg while image loads */}
               <div className="absolute inset-0 bg-gray-100" />
               <Image
-                src="/images/IMG_9008.webp"
+                src="/images/projects/genset.webp"
                 alt="Modern corporate office interior"
                 fill
                 className="object-cover object-center"
@@ -56,16 +56,16 @@ export function About() {
               Expertise in Integrated Smart Technology
             </h2>
 
-            <p className="mb-6 text-base leading-relaxed text-slate-600 md:text-lg">
-              QSTC Services Limited is a leading provider of electrical services
-              and an expert in electronic security and safety system
-              integration. Our mission is to deliver personalized, technical,
-              and professional solutions that enhance the value of our clients’
-              businesses. Since our establishment in 2008, we have grown from a
-              modest yet technically robust foundation into a trusted
-              organization offering tailored solutions to individuals and
-              businesses across Nigeria. Over the years, we have forged
-              partnerships with some of the world’s leading system
+            <p className="mb-6 text-base leading-relaxed text-justify text-slate-600 md:text-lg">
+              QSTC Services Limited is a leading provider of
+              electrical/mechanical services and an expert in electronic
+              security and safety system integration. Our mission is to deliver
+              personalized, technical, and professional solutions that enhance
+              the value of our clients’ businesses. Since our establishment in
+              2008, we have grown from a modest yet technically robust
+              foundation into a trusted organization offering tailored solutions
+              to individuals and businesses across Nigeria. Over the years, we
+              have forged partnerships with some of the world’s leading system
               manufacturers. Our services include detailed analyses, equipment
               class comparisons, and comprehensive project cost assessments,
               enabling our clients to make informed decisions and select the

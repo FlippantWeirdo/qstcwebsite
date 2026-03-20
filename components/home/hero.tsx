@@ -11,7 +11,8 @@ import { DownloadProfileSheet } from "@/components/DownloadProfileSheet";
 
 const images = [
   "/images/hero/server.webp",
-  "/images/hero/security.webp",
+  // "/images/hero/security.webp",
+  "/images/hero/cameraimg.webp",
   "/images/hero/smarthome.webp",
 ];
 
@@ -127,11 +128,11 @@ export function Hero() {
             </div>
           </h1>
 
-          <p className="hero-subtitle mb-10 max-w-2xl text-lg leading-relaxed text-gray-300 md:text-xl">
-            From Security Systems Installation Services, Fire Fighting &
-            Detection Systems to IT Infrastructures & BMS, we design and deliver
-            cutting-edge solutions tailored to protect, connect, save costs and
-            empower your business.
+          <p className="hero-subtitle mb-10 max-w-2xl text-lg leading-relaxed text-justify text-gray-300 md:text-xl">
+            From MEP Solutions, Security and Safety Systems, Fire Fighting, Fire
+            Detection and Alarm Systems to IT Infrastructures & BMS, we design
+            and deliver cutting-edge solutions tailored to protect, connect,
+            save costs and enhance your infrastructure.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 relative z-20">

@@ -47,7 +47,7 @@ export function HomeAutomationSection() {
               Home Automation
             </h2>
 
-            <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
+            <div className="space-y-6 text-gray-600 text-lg hyphens-auto leading-relaxed">
               <p>
                 With QSTC &apos;connected home&apos; solution offerings,
                 connecting to your home appliances/systems and ensuring the
@@ -56,7 +56,7 @@ export function HomeAutomationSection() {
               </p>
 
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <p className="font-medium text-gray-800 italic">
+                <p className="font-medium text-gray-800 text-justify hyphens-auto italic">
                   &quot;Are you interested in being certain that a certain
                   entrance or exit door is locked? Do you desire to have
                   multi-room sound system? Do you want to use voice assistant –

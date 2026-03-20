@@ -75,7 +75,7 @@ export function MechanicalOverview() {
                   </div> */}
                   Mechanical & Plumbing Solutions
                 </h2>
-                <p className="text-gray-600 text-lg leading-relaxed">
+                <p className="text-gray-600 text-lg text-justify hyphens-auto leading-relaxed">
                   At QSTC Services Limited, we understand that a building is
                   only as efficient as its core systems. By integrating
                   sophisticated HVAC, high-precision piping, and sustainable

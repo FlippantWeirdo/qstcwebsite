@@ -50,7 +50,7 @@ export function FireDetection() {
             Fire; Poisonous Gas Detection & Alarm
           </h2>
 
-          <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
+          <div className="space-y-4 text-gray-300 text-lg text-justify hyphens-auto leading-relaxed">
             <p>
               We understand that nothing is more precious than the lives of your
               family, employees, customers and other members of the public who
@@ -63,21 +63,16 @@ export function FireDetection() {
               system design and installation. We are one of the few available in
               West Africa.
             </p>
-            <p>
-              Kindly contact us today. Either small or big; networked or simple,
-              we have the right skill to support you from inception till the
-              end.
-            </p>
           </div>
         </div>
 
         <div className="detection-images grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl border border-gray-800">
             <Image
-              src="/images/1000279224.webp"
+              src="/images/projects/gas-controller.webp"
               alt="Fire Alarm Control Panel"
               fill
-              className="object-fill rotate-90"
+              className="object-cover"
             />
           </div>
           <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl border border-gray-800">

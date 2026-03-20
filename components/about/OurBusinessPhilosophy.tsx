@@ -66,7 +66,7 @@ export function OurBusinessPhilosophy() {
               <h2 className="philosophy-heading text-3xl md:text-4xl font-extrabold text-[#111827]">
                 Our Business Philosophy
               </h2>
-              <div className="philosophy-text space-y-5 text-[#4B5563] text-lg leading-relaxed">
+              <div className="philosophy-text space-y-5 text-[#4B5563] text-justify hyphens-auto text-lg leading-relaxed">
                 <p>
                   We put our clients first and strive to secure their trust
                   through high quality and timely service and innovative
@@ -100,7 +100,7 @@ export function OurBusinessPhilosophy() {
                   <AccordionTrigger className="text-xl font-bold text-[#111827] hover:no-underline hover:text-[#3B82F6] transition-colors">
                     We Design
                   </AccordionTrigger>
-                  <AccordionContent className="text-[#4B5563] text-base leading-relaxed pt-2">
+                  <AccordionContent className="text-[#4B5563] text-base text-justify hyphens-auto leading-relaxed pt-2">
                     We DESIGN, INSTALL, and provide SUPPORT. We work with you,
                     listen to every details of your security need and design
                     solution that is tailored for you, quality and within your
@@ -119,7 +119,7 @@ export function OurBusinessPhilosophy() {
                   <AccordionTrigger className="text-xl font-bold text-[#111827] hover:no-underline hover:text-[#3B82F6] transition-colors">
                     We Implement
                   </AccordionTrigger>
-                  <AccordionContent className="text-[#4B5563] text-base leading-relaxed pt-2">
+                  <AccordionContent className="text-[#4B5563] text-base text-justify hyphens-auto leading-relaxed pt-2">
                     We have individuals with more than 20 years experience in
                     the service delivery industry. It is one of our strengths
                     and it has always assists us in delivering our projects
@@ -133,7 +133,7 @@ export function OurBusinessPhilosophy() {
                   <AccordionTrigger className="text-xl font-bold text-[#111827] hover:no-underline hover:text-[#3B82F6] transition-colors">
                     We Train & Support
                   </AccordionTrigger>
-                  <AccordionContent className="text-[#4B5563] text-base leading-relaxed pt-2">
+                  <AccordionContent className="text-[#4B5563] text-base text-justify hyphens-auto leading-relaxed pt-2">
                     We offer hands-on training, seminar, and certificate-based
                     training on fire detection and alarm system, and
                     instrumentations to he-would-be system integrators,

@@ -46,8 +46,8 @@ export function ProjectsHero() {
             Recent Projects
           </h1>
           <p className="text-lg md:text-xl text-gray-200">
-            A selection of projects that showcase our capabilities across fire
-            safety, ELV systems, IT infrastructure, and power solutions.
+            A selection of projects that showcase our capabilities across Fire
+            Safety, ELV Systems, IT Infrastructure, and Power Solutions.
           </p>
         </div>
       </div>

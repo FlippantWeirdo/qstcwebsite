@@ -48,7 +48,7 @@ const services = [
   },
   {
     icon: Lightbulb,
-    title: "Electrical Power Solutions",
+    title: "Power & Electrical",
     description:
       "Reliable power distribution and backup systems including UPS and generators.",
     href: "/services/electric-power-solutions",

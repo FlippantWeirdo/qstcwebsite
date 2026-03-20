@@ -43,10 +43,10 @@ export function ElectricPowerHero() {
             Energy & Utilities
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-            Electrical & Power Solutions
+            Power & Electrical Solutions
           </h1>
           <p className="text-lg md:text-xl text-gray-200">
-            Quality and dependable electrical power solutions designed for
+            Quality and dependable Power & Electrical solutions designed for
             public, private, and government infrastructure.
           </p>
         </div>

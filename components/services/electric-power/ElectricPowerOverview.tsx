@@ -52,12 +52,12 @@ export function ElectricPowerOverview() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="pow-text space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Electrical & Power Solution
+              Power & Electrical Solutions
             </h2>
-            <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
+            <div className="space-y-4 text-lg text-gray-600 text-justify hyphens-auto leading-relaxed">
               <p>
-                We provide quality and dependable electrical power solutions for
-                various needs and usages.
+                We provide quality and dependable Power & Electrical solutions
+                for various needs and usages.
               </p>
               <p>
                 We support facility managers, building owners and end users - in
@@ -72,10 +72,11 @@ export function ElectricPowerOverview() {
               <ul className="space-y-4">
                 {[
                   "Lighting & Power installations",
-                  "Installation of Electrical Distribution System",
-                  "Electrical preventive maintenance",
+                  "Electrical Power Generation & Distribution System",
                   "Rural & Urban electrification",
+                  "LED lighting retrofit",
                   "Renewable Energy: Inverters & Solar Panels",
+                  "Earthing & Lightning Protection",
                 ].map((item, i) => (
                   <li
                     key={i}

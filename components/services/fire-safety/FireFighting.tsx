@@ -44,7 +44,7 @@ export function FireFighting() {
             Fire Fighting Solutions
           </h2>
 
-          <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
+          <div className="space-y-4 text-gray-600 text-lg text-justify hyphens-auto leading-relaxed">
             <p>
               In our country fire accident is a very common phenomenon. Many
               lives and properties have been lost due to fire outbreak. As a

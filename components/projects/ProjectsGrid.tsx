@@ -83,7 +83,7 @@ export function ProjectsGrid() {
                 {categoryProjects.map((project, index) => (
                   <div
                     key={index}
-                    className="project-card group relative aspect-[4/5] w-full overflow-hidden rounded-2xl"
+                    className="project-card group relative aspect-4/5 w-full overflow-hidden rounded-2xl"
                   >
                     <Image
                       src={project.image}
@@ -93,14 +93,14 @@ export function ProjectsGrid() {
                     />
 
                     {/* Gradient overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent transition-opacity duration-500 group-hover:from-slate-950/95" />
+                    <div className="absolute inset-0 bg-linear-to-t from-slate-950/90 via-slate-950/30 to-transparent transition-opacity duration-500 group-hover:from-slate-950/95" />
 
                     {/* Text content pinned to the bottom */}
                     <div className="absolute bottom-0 left-0 flex w-full flex-col justify-end p-7">
                       <span className="mb-2 text-xs font-bold tracking-widest text-[#3B82F6] uppercase transition-transform duration-500 group-hover:-translate-y-1">
                         {project.category}
                       </span>
-                      <h3 className="text-lg font-bold leading-snug text-white transition-transform duration-500 group-hover:-translate-y-1">
+                      <h3 className="text-lg font-bold leading-snug text-white hyphens-auto transition-transform duration-500 group-hover:-translate-y-1">
                         {project.title}
                       </h3>
                     </div>
@@ -114,4 +114,3 @@ export function ProjectsGrid() {
     </section>
   );
 }
-

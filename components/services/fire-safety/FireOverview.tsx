@@ -50,7 +50,7 @@ export function FireOverview() {
               The Fire Detection Alarm & Firefighting Solutions
             </h2>
 
-            <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
+            <div className="space-y-4 text-gray-600 text-lg text-justify hyphens-auto leading-relaxed">
               <p>
                 Fire is, most likely, the single most catastrophic event that
                 any property will face. It endangers not only the structures but

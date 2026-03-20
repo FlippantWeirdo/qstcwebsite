@@ -1,4 +1,24 @@
+import type { Metadata } from "next";
 import { AboutHero } from "@/components/about/AboutHero";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn about QSTC Services Limited — our journey, mission, values, and the expertise that makes us a trusted partner for systems integration across Nigeria.",
+  keywords: [
+    "about QSTC",
+    "QSTC history",
+    "QSTC mission",
+    "systems integration company Nigeria",
+    "QSTC values",
+  ],
+  openGraph: {
+    title: "About Us | QSTC Services Limited",
+    description:
+      "Learn about QSTC Services Limited — our journey, mission, values, and the expertise that makes us a trusted partner for systems integration across Nigeria.",
+    url: "/about",
+  },
+};
 import { OurJourney } from "@/components/about/OurJourney";
 import { OurBusinessPhilosophy } from "@/components/about/OurBusinessPhilosophy";
 import { MissionVision } from "@/components/about/MissionVision";

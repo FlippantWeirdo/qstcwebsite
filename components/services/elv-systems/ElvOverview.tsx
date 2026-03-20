@@ -73,7 +73,7 @@ export function ElvOverview() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               The Low Voltage Security, Safety & Communication Solution
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 text-justify hyphens-auto leading-relaxed">
               We offer solutions ranging from standalone to integrated
               electronics and automated security, safety and communication
               systems for small, medium and large scale applications in hotels,

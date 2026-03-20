@@ -29,7 +29,7 @@ export function Legacy() {
               Stronger in <span className="text-slate-800">PARTNERSHIP!</span>
             </h2>
 
-            <p className="mb-12 text-base leading-relaxed text-slate-600 md:text-lg">
+            <p className="mb-12 text-base leading-relaxed text-justify text-slate-600 md:text-lg">
               With decades of combined expertise, QSTC Services Limited stands
               at the forefront of technical innovation. We don&apos;t just
               provide services; we build long-term relationships based on trust,

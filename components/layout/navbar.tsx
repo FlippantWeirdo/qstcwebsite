@@ -35,7 +35,7 @@ const navLinks = [
       },
       {
         href: "/services/electric-power-solutions",
-        label: "Electric Power Solutions",
+        label: "Power & Electrical",
       },
       {
         href: "/services/bms",
@@ -91,11 +91,11 @@ export function Navbar() {
           : "bg-transparent",
       )}
     >
-      <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between px-6 lg:px-8">
+      <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between px-2 sm:pr-6 lg:px-8">
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center rounded-lg p-1.5 transition-all"
+          className="flex items-center rounded-lg px-1 py-1.5 sm:pr-1.5 transition-all"
         >
           <Image
             src={
@@ -158,7 +158,12 @@ export function Navbar() {
                           <Link
                             key={sub.href}
                             href={sub.href}
-                            className="block px-4 py-3 rounded-xl text-[14px] text-gray-700 hover:bg-blue-50 hover:text-[#3B82F6] dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-[#3B82F6] transition-colors leading-snug"
+                            className={cn(
+                              "block px-4 py-3 rounded-xl text-[14px] transition-colors leading-snug",
+                              pathname === sub.href
+                                ? "bg-blue-50 text-[#3B82F6] font-medium dark:bg-blue-500/10"
+                                : "text-gray-700 hover:bg-blue-50 hover:text-[#3B82F6] dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-[#3B82F6]",
+                            )}
                           >
                             {sub.label}
                           </Link>
@@ -235,7 +240,7 @@ export function Navbar() {
                       }}
                       className={cn(
                         "flex items-center justify-between rounded-lg px-4 py-3 text-[15px] font-medium transition-colors",
-                        isActive && !link.subItems
+                        isActive
                           ? "bg-blue-50 text-[#3B82F6] dark:bg-blue-500/10"
                           : "text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-white/5",
                       )}
@@ -254,7 +259,12 @@ export function Navbar() {
                             key={sub.href}
                             href={sub.href}
                             onClick={() => setMobileOpen(false)}
-                            className="block py-2 text-sm text-gray-500 hover:text-[#3B82F6] dark:text-gray-400 dark:hover:text-[#3B82F6] transition-colors"
+                            className={cn(
+                              "block py-2 text-sm transition-colors",
+                              pathname === sub.href
+                                ? "text-[#3B82F6] font-medium"
+                                : "text-gray-500 hover:text-[#3B82F6] dark:text-gray-400 dark:hover:text-[#3B82F6]",
+                            )}
                           >
                             {sub.label}
                           </Link>

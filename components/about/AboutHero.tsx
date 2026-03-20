@@ -46,7 +46,7 @@ export function AboutHero() {
       {/* Background Image */}
       <div className="absolute inset-0 opacity-30 lg:opacity-40">
         <Image
-          src="/images/about/hero.webp"
+          src="/images/about-hero.webp"
           alt="About QSTC Office"
           fill
           priority

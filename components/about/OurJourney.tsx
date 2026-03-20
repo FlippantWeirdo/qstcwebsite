@@ -65,7 +65,7 @@ export function OurJourney() {
               </h2>
             </div>
 
-            <div className="space-y-6 text-[#4B5563] text-lg leading-relaxed">
+            <div className="space-y-6 text-[#4B5563] text-lg text-justify leading-relaxed">
               <p>
                 Established in 2008, QSTC Services Limited has grown into a
                 premier systems integration company. We specialize in providing
@@ -106,7 +106,7 @@ export function OurJourney() {
           <div className="relative mt-12 lg:mt-0 pl-4 sm:pl-16">
             <div className="journey-image relative h-[550px] w-full rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/IMG_2057.webp"
+                src="/images/IMG_9008.webp"
                 alt="Technician working on server rack"
                 fill
                 className="object-cover"

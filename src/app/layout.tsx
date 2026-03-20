@@ -15,7 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "QSTC Services Limited | ELV, Automation & System Integration",
+  title: {
+    default: "QSTC Services Limited | ELV, Automation & System Integration",
+    template: "%s | QSTC Services Limited",
+  },
   description:
     "QSTC Services Limited delivers expert solutions in Extra Low Voltage (ELV) systems, Building Automation, Fire Safety and System Integration across Nigeria.",
   keywords: [
