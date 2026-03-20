@@ -60,7 +60,7 @@ export function ContactForm() {
     const formData = new FormData(e.currentTarget);
 
     try {
-      const response = await fetch("https://formspree.io/f/mwvrpolp", {
+      const response = await fetch("https://formspree.io/f/xaqpkarv", {
         method: "POST",
         body: formData,
         headers: {
@@ -280,4 +280,3 @@ export function ContactForm() {
     </section>
   );
 }
-

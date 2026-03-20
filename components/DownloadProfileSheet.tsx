@@ -35,7 +35,7 @@ export function DownloadProfileSheet({ children }: DownloadProfileSheetProps) {
 
     try {
       // Using Formspree like in ContactForm
-      const response = await fetch(" ", {
+      const response = await fetch("https://formspree.io/f/mreydjzq", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
