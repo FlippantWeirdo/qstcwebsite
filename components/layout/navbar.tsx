@@ -91,11 +91,11 @@ export function Navbar() {
           : "bg-transparent",
       )}
     >
-      <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between px-2 sm:pr-6 lg:px-8">
+      <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-2 sm:pr-6 lg:px-8">
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center rounded-lg px-1 py-1.5 sm:pr-1.5 transition-all"
+          className="flex items-center rounded-lg px-1 sm:pr-1.5 transition-all"
         >
           <Image
             src={
@@ -104,8 +104,8 @@ export function Navbar() {
                 : "/qstc-logo-white-text.png"
             }
             alt="QSTC Services Logo"
-            width={180}
-            height={40}
+            width={220}
+            height={50}
             className="object-contain"
             priority
           />
@@ -124,7 +124,7 @@ export function Navbar() {
                   href={link.subItems ? "#" : link.href}
                   onClick={(e) => link.subItems && e.preventDefault()}
                   className={cn(
-                    "group/link relative flex items-center gap-1 px-4 py-6 text-sm font-medium transition-colors duration-300",
+                    "group/link relative flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors duration-300",
                     isActive
                       ? "text-[#3B82F6]"
                       : scrolled || isLightTop

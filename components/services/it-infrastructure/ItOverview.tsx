@@ -96,7 +96,7 @@ export function ItOverview() {
 
           <div className="overview-image relative h-[700px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/projects/IT-infrastructure.webp"
+              src="/images/projects/IT-Infrastructure.webp"
               alt="Network Infrastructures and Server Hardware"
               fill
               className="object-cover"

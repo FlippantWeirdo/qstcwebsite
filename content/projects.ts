@@ -88,7 +88,7 @@ export const projects: Project[] = [
     title:
       "Installation and Commissioning of Network Infrastructure, IP CCTV,Voice Evacuation and Access Control Systems for a Government Parastatal Training Centre",
     category: "IT Infrastructure",
-    image: "/images/projects/IT-infrastructure.webp",
+    image: "/images/projects/IT-Infrastructure.webp",
   },
   {
     title:

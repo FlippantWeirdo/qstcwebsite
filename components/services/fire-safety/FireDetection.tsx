@@ -47,7 +47,7 @@ export function FireDetection() {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="detection-text space-y-6 max-w-4xl mb-16">
           <h2 className="text-3xl md:text-4xl font-extrabold pb-4 inline-block">
-            Fire; Poisonous Gas Detection & Alarm
+            Poisonous Gas Detection & Alarm
           </h2>
 
           <div className="space-y-4 text-gray-300 text-lg text-justify hyphens-auto leading-relaxed">
