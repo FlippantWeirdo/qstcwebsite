@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://qstcng.com"),
   title: {
     default: "QSTC Services Limited | ELV, Automation & System Integration",
     template: "%s | QSTC Services Limited",

@@ -95,7 +95,7 @@ export function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center rounded-lg pr-1 sm:pr-1.5 transition-all"
+          className="flex items-center pt-2 rounded-lg pr-1 sm:pr-1.5 transition-all"
         >
           <Image
             src={

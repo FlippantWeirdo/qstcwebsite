@@ -24,7 +24,7 @@ export const projects: Project[] = [
   },
   {
     title:
-      "Installation and Commissioning of Industrial Kitchen Hood Fire Fighting System",
+      "Installation & Commissioning of Industrial Kitchen Hood Fire Fighting System",
     category: "Fire Safety",
     image: "/images/LSG-Sky.webp",
   },
@@ -32,13 +32,13 @@ export const projects: Project[] = [
   // ── Electrical "Power Systems" ──────────────────────────────
   {
     title:
-      "15MVA 33/11KV Transformer Substation and MV Distribution Panels Supplying Power to a Military Base",
+      "15MVA 33/11KV Transformer Substation & MV Distribution Panels Supplying Power to a Military Base",
     category: "Power & Electrical",
     image: "/images/projects/15mvatransformer.webp",
   },
   {
     title:
-      "5 x 2MW MWM 11KV Gas Generators complete with Synchronization and Distribution Panels, all Stepped up to 33KV through a 10.5MVA 11/33KV Transformer Installed",
+      "5 x 2MW MWM 11KV Gas Generators complete with Synchronization & Distribution Panels, all Stepped up to 33KV through a 10.5MVA 11/33KV Transformer Installed",
     category: "Power & Electrical",
     image: "/images/projects/11kvgasgen.webp",
   },
@@ -52,7 +52,7 @@ export const projects: Project[] = [
   },
   {
     title:
-      "CCHP System (Electrical Power, Waste Heat Recovery Boiler and Absorption Chiller) derived from a 1.5MW CAT Gas Generator Installed and Commissioned",
+      "CCHP System (Electrical Power, Waste Heat Recovery Boiler & Absorption Chiller) derived from a 1.5MW CAT Gas Generator Installed & Commissioned",
     category: "Mechanical & Plumbing",
     image: "/images/projects/cchp.webp",
   },
@@ -76,9 +76,8 @@ export const projects: Project[] = [
     image: "/images/projects/octagontower.webp",
   },
   {
-    title: "Supply & Installation of campus-wide IP CCTV and Access Control",
+    title: "Supply & Installation of campus-wide IP CCTV & Access Control",
     category: "ELV Systems",
-    // add julius berger image
     image: "/images/projects/ckcc.webp",
   },
 
@@ -86,19 +85,19 @@ export const projects: Project[] = [
 
   {
     title:
-      "Installation and Commissioning of Network Infrastructure, IP CCTV,Voice Evacuation and Access Control Systems for a Government Parastatal Training Centre",
+      "Installation & Commissioning of Network Infrastructure, IP CCTV,Voice Evacuation & Access Control Systems for a Government Parastatal Training Centre",
     category: "IT Infrastructure",
     image: "/images/projects/IT-Infrastructure.webp",
   },
   {
     title:
-      "Installation and Commissioning of CCTV, Fire, IT Networking, Home auotmation, Cinema and Conference system at residential building",
+      "Installation & Commissioning of CCTV, Fire, IT Networking, Home auotmation, Cinema & Conference system at residential building",
     category: "IT Infrastructure",
     image: "/images/projects/rdhouse.webp",
   },
   {
     title:
-      "Installation and Commissioning of IT Networking, IP CCTV and Addressable Fire Alarm System at hotel",
+      "Installation & Commissioning of IT Networking, IP CCTV & Addressable Fire Alarm System at hotel",
     category: "IT Infrastructure",
     image: "/images/projects/Intercontinental-Hotel.webp",
   },
