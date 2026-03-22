@@ -25,6 +25,7 @@ import { MissionVision } from "@/components/about/MissionVision";
 import { WhyTrustUs } from "@/components/about/WhyTrustUs";
 import { QuoteStats } from "@/components/about/QuoteStats";
 import { PartnersMarquee } from "@/components/about/PartnersMarquee";
+import { ClientMarquee } from "@/components/about/ClientMarquee";
 import { AboutCta } from "@/components/about/AboutCta";
 
 export default function AboutPage() {
@@ -35,8 +36,9 @@ export default function AboutPage() {
       <OurBusinessPhilosophy />
       <MissionVision />
       <WhyTrustUs />
-      <QuoteStats />
       <PartnersMarquee />
+      <QuoteStats />
+      <ClientMarquee />
       <AboutCta />
     </main>
   );
