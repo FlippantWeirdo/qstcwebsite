@@ -162,7 +162,7 @@ export function Hero() {
       </div>
 
       {/* Bottom Gradient overlay */}
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-t from-gray-50 to-transparent dark:from-black" />
+      <div className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-gray-50 to-transparent dark:from-black" />
     </section>
   );
 }

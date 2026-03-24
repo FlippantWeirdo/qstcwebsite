@@ -104,7 +104,7 @@ export function OurJourney() {
 
           {/* Image Content */}
           <div className="relative mt-12 lg:mt-0 pl-4 sm:pl-16">
-            <div className="journey-image relative h-[550px] w-full rounded-2xl overflow-hidden shadow-2xl">
+            <div className="journey-image relative h-137.5 w-full rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/images/IMG_9008.webp"
                 alt="Technician working on server rack"
@@ -113,7 +113,7 @@ export function OurJourney() {
               />
             </div>
             {/* Overlay Card */}
-            <div className="journey-badge absolute bottom-12 left-0 sm:-left-8 lg:-left-12 bg-[#3B82F6] text-white p-7 rounded-xl shadow-xl w-60 animate-float-card">
+            <div className="journey-badge absolute -bottom-4 left-0 md:left-4 sm:-left-8 lg:-left-12 bg-[#3B82F6] text-white p-7 rounded-xl shadow-xl w-60 animate-float-card">
               <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mb-4 text-[#3B82F6]">
                 <ShieldCheck className="w-6 h-6" strokeWidth={2.5} />
               </div>

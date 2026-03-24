@@ -9,7 +9,7 @@ export function About() {
           {/* Left Column: Image & Floating Badge */}
           <div className="relative">
             {/* Main Image Container */}
-            <div className="relative aspect-square w-full max-w-[500px] overflow-hidden rounded-3xl lg:aspect-4/5 lg:mr-auto">
+            <div className="relative aspect-square w-full max-w-125 overflow-hidden rounded-3xl lg:aspect-4/5 lg:mr-auto">
               {/* Fallback gray bg while image loads */}
               <div className="absolute inset-0 bg-gray-100" />
               <Image
@@ -22,7 +22,7 @@ export function About() {
 
             {/* Floating Stats Badge */}
             <div
-              className="absolute -bottom-6 right-4 lg:-right-10 lg:-bottom-10 z-10"
+              className="absolute -bottom-6 right-10 md:right-32 md:-bottom-10 z-10"
               style={{ animation: "float 6s ease-in-out infinite" }}
             >
               <style>{`

@@ -10,15 +10,12 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {/* Column 1: Brand & Socials */}
           <div className="flex flex-col space-y-6">
-            <Link
-              href="/"
-              className="inline-flex w-fit items-center rounded-lg bg-white/95 p-2.5 transition-transform hover:scale-105"
-            >
+            <Link href="/" className="transition-transform hover:scale-110">
               <Image
-                src="/logov2.png"
+                src="/qstc-logo-white.webp"
                 alt="QSTC Services Logo"
-                width={180}
-                height={45}
+                width={400}
+                height={100}
                 className="object-contain"
               />
             </Link>

@@ -99,9 +99,7 @@ export function Navbar() {
         >
           <Image
             src={
-              scrolled || isLightTop
-                ? "/logov2.png"
-                : "/qstc-logo-white-text.png"
+              scrolled || isLightTop ? "/logov2.png" : "/qstc-logo-white.webp"
             }
             alt="QSTC Services Logo"
             width={220}
