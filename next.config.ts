@@ -14,23 +14,23 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/our-solutions",
+        source: "/our-soutions",
         destination: "/projects",
         permanent: true,
       },
       {
         source: "/electrical-power-systems",
-        destination: "/electric-power-solutions",
+        destination: "/services/electric-power-solutions",
         permanent: true,
       },
       {
         source: "/low-voltage-security-systems",
-        destination: "/elvsystems",
+        destination: "/services/elvsystems",
         permanent: true,
       },
       {
         source: "/it-infrastructure-solutions",
-        destination: "/it-infrastructure",
+        destination: "/services/it-infrastructure",
         permanent: true,
       },
     ];
