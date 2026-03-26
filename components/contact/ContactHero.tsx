@@ -25,7 +25,7 @@ export function ContactHero() {
   return (
     <section
       ref={container}
-      className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden"
+      className="relative h-[60vh] min-h-125 flex items-center justify-center overflow-hidden bg-slate-950"
     >
       <div className="absolute inset-0 z-0">
         <Image
