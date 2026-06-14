@@ -28,6 +28,8 @@ export function DownloadProfileSheet({ children }: DownloadProfileSheetProps) {
 
     const formData = new FormData(e.currentTarget);
     const data = {
+      firstName: formData.get("firstName"),
+      lastName: formData.get("lastName"),
       company: formData.get("company"),
       email: formData.get("email"),
       source: "Company Profile Download",
@@ -128,6 +130,41 @@ export function DownloadProfileSheet({ children }: DownloadProfileSheetProps) {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-8 pb-10">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-3.5 group">
+                    <label
+                      htmlFor="firstName"
+                      className="text-xs font-bold text-[#3B82F6] ml-1 tracking-widest uppercase opacity-80"
+                    >
+                      First Name <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      id="firstName"
+                      name="firstName"
+                      type="text"
+                      required
+                      placeholder="John"
+                      className="w-full h-14 px-5 bg-gray-50/50 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-600/50 focus:bg-white transition-all duration-300 placeholder:text-gray-400"
+                    />
+                  </div>
+
+                  <div className="space-y-3.5 group">
+                    <label
+                      htmlFor="lastName"
+                      className="text-xs font-bold text-[#3B82F6] ml-1 tracking-widest uppercase opacity-80"
+                    >
+                      Last Name
+                    </label>
+                    <input
+                      id="lastName"
+                      name="lastName"
+                      type="text"
+                      placeholder="Doe"
+                      className="w-full h-14 px-5 bg-gray-50/50 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-600/50 focus:bg-white transition-all duration-300 placeholder:text-gray-400"
+                    />
+                  </div>
+                </div>
+
                 {/* <div className="space-y-3.5 group">
                   <label
                     htmlFor="company"
