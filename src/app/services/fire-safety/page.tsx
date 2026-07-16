@@ -24,6 +24,7 @@ import { FireDetection } from "@/components/services/fire-safety/FireDetection";
 import { FireFighting } from "@/components/services/fire-safety/FireFighting";
 import { FireOverview } from "@/components/services/fire-safety/FireOverview";
 import { FireSafetyHero } from "@/components/services/fire-safety/FireSafetyHero";
+import { FieldReport } from "@/components/services/fire-safety/FieldReport";
 
 export default function FireSafetyPage() {
   return (
@@ -32,6 +33,7 @@ export default function FireSafetyPage() {
       <FireOverview />
       <FireDetection />
       <FireFighting />
+      <FieldReport />
       <Cta />
     </main>
   );

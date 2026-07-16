@@ -73,6 +73,14 @@ export function Cta() {
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </div>
+
+            <Link
+              href="/services/fire-safety#field-report"
+              className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-blue-100/80 hover:text-white transition-colors"
+            >
+              Read our latest field commissioning report
+              <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </div>
