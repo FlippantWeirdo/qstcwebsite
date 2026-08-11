@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Make sure the PDF is bundled with the /profile route handler, which reads
+  // it off disk at request time.
+  outputFileTracingIncludes: {
+    "/profile": ["./public/document/QSTC-Corporate-Profile.pdf"],
+  },
   async redirects() {
     return [
       {
