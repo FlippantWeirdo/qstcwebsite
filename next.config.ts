@@ -6,6 +6,16 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/profile": ["./public/document/QSTC-Corporate-Profile.pdf"],
   },
+  // Keep the corporate profile PDF out of search results on the raw static
+  // path too, not just the /profile route handler.
+  async headers() {
+    return [
+      {
+        source: "/document/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+    ];
+  },
   async redirects() {
     return [
       {

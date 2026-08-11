@@ -15,6 +15,9 @@ export async function GET() {
       "Content-Disposition": `attachment; filename="${FILE_NAME}"`,
       "Content-Length": String(file.byteLength),
       "Cache-Control": "public, max-age=0, must-revalidate",
+      // Keep the link out of search results. This has to stay crawlable in
+      // robots.txt for the header to ever be read.
+      "X-Robots-Tag": "noindex, nofollow",
     },
   });
 }
